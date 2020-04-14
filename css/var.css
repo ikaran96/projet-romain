@@ -1,0 +1,23 @@
+:root {
+    /* :root{--test: pink;} body{background-color: var(--test);} */
+
+    /* color */
+    --colorPrimary: #002c4e;
+    --colorSecondary: #e00025;
+    --colorBgLight: #ececec;
+    --colorText: black;
+    --colorTextLight: #a3a3a3;
+
+    /* font */
+    --fontText: 'Roboto', sans-serif;
+    --fontTitleArticle: 'Roboto Slab', sans-serif;
+    --fontSubTitleArticle: 'Lato', sans-serif;
+
+
+    /* size  */
+    --heightNav: 50px;
+    --maxWidth: 1000px;
+}
+
+
+
