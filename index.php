@@ -15,7 +15,7 @@
 <body>
 
     <?php include 'include/nav.php'; ?>
-
+    
     <div id="page">
 
         <div class="bar">
