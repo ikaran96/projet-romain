@@ -3,6 +3,10 @@
 #page {
 
 }
+.bar {
+    background-color: cadetblue;
+    height: 100px;
+}
 main {
     background-color: aquamarine;
     height: 500px;
@@ -13,12 +17,14 @@ aside {
 }
 
 
+
 @media only screen and (min-width: 700px) {
     #page {
         display: grid;
         grid-template-columns: 90%;
         justify-content: center;
     }
+
 }
 
 @media only screen and (min-width: 900px) {
@@ -27,7 +33,9 @@ aside {
         grid-column-gap: 3%;
         max-width: var(--maxWidth);
         margin: auto;
-
+    }
+    #page .bar {
+        grid-column: span 2;
     }
 
 

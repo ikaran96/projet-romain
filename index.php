@@ -18,6 +18,10 @@
 
     <div id="page">
 
+        <div class="bar">
+
+        </div>
+
         <main>
 
 
