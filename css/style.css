@@ -1,0 +1,27 @@
+
+
+#page {
+
+}
+main {
+    background-color: aquamarine;
+    height: 500px;
+}
+aside {
+    background-color: burlywood;
+    height: 500px;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    #page {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        max-width: var(--maxWidth);
+        margin: auto;
+
+    }
+
+
+}

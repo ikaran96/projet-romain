@@ -16,6 +16,20 @@
 
     <?php include 'include/nav.php'; ?>
 
+    <div id="page">
+
+        <main>
+
+
+        </main>
+
+        <aside>
+
+
+        </aside>
+
+    <div>
+
 
     <?php include 'include/footer.php'; ?>
     
