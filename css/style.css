@@ -1,0 +1,166 @@
+/*------FOOTER 1-----*/
+
+.footer-1 {
+    background-color: var(--colorPrimary);
+    color: var(--colorFootertext);
+    font-family: var(--fontTitleArticle);
+    padding: 20px;
+}
+
+.footer-col {
+    margin-bottom: 50px;
+}
+
+.col-title {
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.list-footer {
+    column-count: 2;
+    line-height: 1.5;
+    column-gap: 10px;
+
+}
+
+.list-footer-articles {
+    line-height: 1.5;
+}
+
+.item-footer {
+    margin-bottom: 7px;
+}
+
+.item-footer-articles {
+    margin-bottom: 20px;
+}
+
+
+.footer-url,
+.footer-url-bg {
+    color: var(--colorFootertext);
+    font-family: var(--fontTitleArticle);
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.footer-url:hover {
+    color: var(--colorSecondary);
+}
+
+.footer-url-bg {
+    font-weight: 400;
+    font-size: 13px;
+
+}
+
+.footer-url {
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.footer-url-bg:hover {
+    background-color: var(--colorSecondary);
+    color: var(--colorPrimary);
+}
+
+
+
+/*------FOOTER 2-----*/
+
+.footer-2 {
+    background-color: var(--colorBottom);
+    padding: 20px;
+}
+
+.bottom-footer-url {
+    font-family: var(--fontTitleArticle);
+    color: var(--colorFooterBottomtext);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 13px;
+}
+
+.bottom-footer-url:hover {
+    color: var(--colorSecondary);
+}
+
+.copyright {
+    color: var(--colorFooterBottomCopy);
+    font-family: var(--fontSubTitleArticle);
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width:900px) {
+
+    .footer-1 {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    .footer-col {
+        width: 33.3%;
+        height: auto;
+        margin: 20px;
+
+    }
+
+    .col-title {
+        margin-top: 0px;
+    }
+
+    .footer-2 {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+
+    }
+
+    .copyright {
+        margin-top: 0px;
+    }
+
+}
+
+@media only screen and (min-width:1300px) {
+    .footer-1 {
+        justify-content: center;
+    }
+
+    .footer-col {
+        width: 25%;
+        margin: 0px;
+    }
+
+    .footer-2{
+        padding-left:10%;
+        padding-right:10%;
+    }
+
+    
+
+
+
+
+
+
+}
