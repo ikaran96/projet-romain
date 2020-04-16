@@ -2,16 +2,35 @@
     margin: 1em 0;
 }
 
+#page .bar {
+    display: flex;
+    align-items: center;
+}
+
+.bar .icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--colorPrimary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2em;
+    color: white;
+}
+
 #page .bar,
-main .top-card-text .intro {
+main .top-card-text .excerpt {
     border-bottom : 1px solid;
     border-color: var(--colorBgLight);
 }
 
 #page .bar h2,
 main .top-card-text .tag,
-main .top-card-text .top-card-title {
+main .top-card-text .top-card-title,
+.top-art-title {
     font-family: var(--fontTitleArticle);
+    text-decoration: none;
 }
 
 #page .bar h2 {
@@ -29,7 +48,7 @@ main .top-card-img img {
     width: 100%;
 }
 
-main .top-card-text .tag {
+.tag {
     text-transform: uppercase;
     color: var(--colorTextLight);
     display: block;
@@ -39,7 +58,7 @@ main .top-card-text .tag {
     margin: 0.7em 0em;
 }
 
-main .top-card-text .intro {
+main .top-card-text .excerpt {
     font-family: var(--fontText);
     color: var(--colorTextLight);
     font-size: 0.9em;

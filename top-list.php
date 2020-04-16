@@ -36,7 +36,7 @@
 
             <div class="top-card">
 
-                <a class="top-card-img">
+                <a class="top-card-img" href="top-article.php">
                     <img src="assests\img\best-of-humour-ffl-sportifs.png" alt="">
                 </a>
 
@@ -44,9 +44,9 @@
 
                     <a class="tag" href="">Autres</a>
                     <h3>
-                        <a class="top-card-title">Top 10 des réponses des sportifs français à la FFL</a>
+                        <a class="top-card-title" href="top-article">Top 10 des réponses des sportifs français à la FFL</a>
                     </h3>
-                    <p class="intro">La Saint-Valentin célèbre l’amour, pourtant à la FFL, on n’a pas toujours la cote
+                    <p class="excerpt">La Saint-Valentin célèbre l’amour, pourtant à la FFL, on n’a pas toujours la cote
                         avec les sportifs français. Logique. Mais il arrive que certains décident...</p>
                     <p class="date">2 mois</p>
 
