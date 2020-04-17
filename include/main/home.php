@@ -3,6 +3,29 @@
     <div class="card-article">
 
         <a href="">
+            <h2 class="title">Le Quiz FFL | Les tireurs en L1 2019/2020</h2>
+        </a>
+
+        <h3 class="subtitle">Le Quiz Sport du jour : Retrouvez les plus gros artilleurs de notre bonne Ligue des Talents. Au menu du quiz sport quotidien, encore du...</h3>
+
+        <div class="img">
+            <a href=""><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Football.svg"
+                    alt=""></a>
+            <a href="index.php?p=article"><img class="image"
+                    src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1024/https://fflose.com/wp-content/uploads/2020/04/17042020-Tireurs-en-L1-1024x538.jpg"
+                    alt=""></a>
+        </div>
+
+        <div class="category">
+            <a href="#">FOOTBALL</a>
+            <a href="#">QUIZ SPORT</a>
+        </div>
+
+    </div>
+
+    <div class="card-article">
+
+        <a href="">
             <h2 class="title">Le Quiz FFL | Paris Roubaix – Les vainqueurs et meilleurs français depuis 1997.</h2>
         </a>
 
@@ -12,7 +35,7 @@
         <div class="img">
             <a href=""><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Cyclisme.svg"
                     alt=""></a>
-            <a href=""><img class="image"
+            <a href="index.php?p=article"><img class="image"
                     src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1200/https://fflose.com/wp-content/uploads/2020/04/12042020-Paris-Roubaix.jpg"
                     alt=""></a>
         </div>
@@ -36,7 +59,7 @@
         <div class="img">
             <a href=""><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Football.svg"
                     alt=""></a>
-            <a href=""><img class="image"
+            <a href="index.php?p=article"><img class="image"
                     src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1200/https://fflose.com/wp-content/uploads/2020/04/13042020-Lens-EN-C1.jpg"
                     alt=""></a>
         </div>
@@ -60,13 +83,36 @@
         <div class="img">
             <a href=""><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Autres.svg"
                     alt=""></a>
-            <a href=""><img class="image"
+            <a href="index.php?p=article"><img class="image"
                     src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_880/https://fflose.com/wp-content/uploads/2020/04/paris-FFL.png"
                     alt=""></a>
         </div>
 
         <div class="category">
             <a href="#">TOP</a>
+        </div>
+
+    </div>
+
+    <div class="card-article">
+
+        <a href="">
+            <h2 class="title">Le Quiz FFL | Les français passés en NBA (ou presque passés)</h2>
+        </a>
+
+        <h3 class="subtitle">On passe à la balle Orange aujourd’hui pour le Quiz du jour de la FFL. Et, si vous avez regardé le documentaire sur Tony Parker,...</h3>
+
+        <div class="img">
+            <a href=""><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Basketball.svg"
+                    alt=""></a>
+            <a href="index.php?p=article"><img class="image"
+                    src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1200/https://fflose.com/wp-content/uploads/2020/03/27032020-Fran%C3%A7ais-en-NBA-1.jpg"
+                    alt=""></a>
+        </div>
+
+        <div class="category">
+            <a href="#">BASKETBALL</a>
+            <a href="#">QUIZ SPORT</a>
         </div>
 
     </div>

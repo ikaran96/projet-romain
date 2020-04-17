@@ -42,7 +42,7 @@
         <div class="footer-col">
             <p class="col-title">INFORMATIONS ET CONTACT</p>
             <ul class="list-footer">
-                <li class="item-footer"><a class="footer-url-bg" href="">MON COMPTE</a></li>
+                <li class="item-footer"><a class="footer-url-bg" href="index.php?p=contact">NOUS CONTACTER</a></li>
                 <li class="item-footer"><a class="footer-url-bg" href="">MON COMPTE</a></li>
                 <li class="item-footer"><a class="footer-url-bg" href="">MON COMPTE</a></li>
                 <li class="item-footer"><a class="footer-url-bg" href="">MON COMPTE</a></li>

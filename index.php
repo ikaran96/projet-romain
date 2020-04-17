@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="css/var.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/guillaume.css">
-
     <script src="https://kit.fontawesome.com/839df3b8b1.js"></script>
 
     <title>Le Bon Sens Français - Accueil</title>
@@ -21,62 +19,36 @@
 </head>
 
 <body>
-
+    
+    <!-- nav -->
     <?php include 'include/nav.php'; ?>
     
     <div id="page">
 
+        <!-- main -->
         <?php 
-        
-        if (empty($_GET['p'])) {
-            include 'include/main/home.php'; 
-        } elseif ($_GET['p'] == 'top') {
-            include 'include/main/top.php'; 
-        } elseif ($_GET['p'] == 'article') {
-            include 'include/main/article.php'; 
-        } else {
-            include 'include/main/home.php';
-        }
-        
+            if (empty($_GET['p'])) {
+                include 'include/main/home.php'; 
+            } elseif ($_GET['p'] == 'top') {
+                include 'include/main/top.php'; 
+            } elseif ($_GET['p'] == 'article') {
+                include 'include/main/article.php'; 
+            } elseif ($_GET['p'] == 'contact') {
+                include 'include/main/contact.php'; 
+            } else {
+                include 'include/main/home.php';
+            }
         ?>
 
-        <aside id="aside">
-
-            <div class="fb-page facebook" data-href="https://www.facebook.com/FFLose/" data-tabs="timeline" data-width="500px" data-height="500px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/FFLose/" class="fb-xfbml-parse-ignore"> 
-                    <a href="https://www.facebook.com/FFLose/">FFL - Fédération Française de la Lose</a>
-                </blockquote>
-            </div>
-
-            <div class="newsletter">
-
-                <div class="img">
-                    <img class="logo" src="https://i.ya-webdesign.com/images/black-envelope-png-icon-2.png" alt="">  
-                </div>
-
-                <span class="title">NEWSLETTER</span>
-                <span class="subtitle">Recevez les dernières actualités</span>
-                <span class="action">inscrivez-vous vite</span>
-
-                <form action="">
-                    <input type="text" name="" id="">
-                    <button>JE M'INSCRIS</button>
-                </form>
-
-                <span class="nospan">Vous ne recevrez aucun SPAM</span>
-
-            </div>
-
-
-        </aside>
+        <!-- aside -->
+        <?php include 'include/aside.php'; ?>
 
     </div>
 
-
+    <!-- footer -->
     <?php include 'include/footer.php'; ?>
     
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v6.0"></script>
+
 
 </body>
 

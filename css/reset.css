@@ -48,5 +48,8 @@ table {
 }
 :not(p)>a {
     text-decoration: none;
-    color: inherit;
+	color: inherit;
+}
+body{
+    font-weight: 300;
 }
