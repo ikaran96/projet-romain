@@ -27,13 +27,13 @@
 
         <main>
 
-            <a class="tag tag-art" href="">Autres</a>
+            <a class="tag-word tag-art" href="">Autres</a>
 
-            <article>
+            <article class="article">
 
                 <h3 class="top-art-title title-art">Top 10 des réponses des sportifs français à la FFL</h3>
 
-                <p class="date">2 mois</p>
+                <p class="date-from date-art">2 mois</p>
 
                 <div class="top-card-img img-art" href="top-article.php">
                     <img src="assests\img\best-of-humour-ffl-sportifs.png" alt="">

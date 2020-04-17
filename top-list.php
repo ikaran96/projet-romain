@@ -17,9 +17,6 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/839df3b8b1.js"></script>
 
-</head>
-
-<body>
 
     <?php include 'include/nav.php'; ?>
 
@@ -42,13 +39,13 @@
 
                 <div class="top-card-text">
 
-                    <a class="tag" href="">Autres</a>
+                    <a class="tag-word" href="">Autres</a>
                     <h3>
                         <a class="top-card-title" href="top-article">Top 10 des réponses des sportifs français à la FFL</a>
                     </h3>
                     <p class="excerpt">La Saint-Valentin célèbre l’amour, pourtant à la FFL, on n’a pas toujours la cote
                         avec les sportifs français. Logique. Mais il arrive que certains décident...</p>
-                    <p class="date">2 mois</p>
+                    <p class="date-from">2 mois</p>
 
                 </div>
             </div>
