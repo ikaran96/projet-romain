@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/var.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://kit.fontawesome.com/839df3b8b1.js"></script>
+    <script src="assests/font-awesome/all.min.js"></script>
 
     <title>Le Bon Sens Français - Accueil</title>
 

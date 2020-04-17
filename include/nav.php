@@ -11,21 +11,21 @@
         </div>
 
         <div class="center">
-            <a href="index.php"><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://fflose.com/wp-content/uploads/2019/02/Logo_FFL_800x800.png" alt=""></a>
+            <a href="index.php"><img src="assests/logo/logo.png" alt=""></a>
         </div>
 
         <div class="menu">
             <ul>
                 <li class="red">
-                    <a href=""><i class="fas fa-shopping-basket"></i>Boutique FFL</a>
+                    <a href=""><i class="fas fa-shopping-basket"></i><span>Boutique FFL</span></a>
                 </li>
 
                 <li>
-                    <a href="index.php?p=top"> <i class="fas fa-trophy"></i> Tops lose</a>
+                    <a href="index.php?p=top"> <i class="fas fa-trophy"></i><span>Tops lose</span></a>
                 </li>
 
                 <li>
-                    <a href=""><i class="fas fa-question-circle"></i>Quiz Sport </a>
+                    <a href=""><i class="fas fa-question-circle"></i><span>Quiz Sport</span></a>
                 </li>
             </ul>
         </div>

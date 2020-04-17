@@ -9,10 +9,10 @@
         <h3 class="subtitle">Le Quiz Sport du jour : Retrouvez les plus gros artilleurs de notre bonne Ligue des Talents. Au menu du quiz sport quotidien, encore du...</h3>
 
         <div class="img">
-            <a href=""><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Football.svg"
+            <a href="index.php?p=article"><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Football.svg"
                     alt=""></a>
             <a href="index.php?p=article"><img class="image"
-                    src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1024/https://fflose.com/wp-content/uploads/2020/04/17042020-Tireurs-en-L1-1024x538.jpg"
+                    src="assests/img/17042020-Tireurs-en-L1.jpg"
                     alt=""></a>
         </div>
 
@@ -33,10 +33,10 @@
             classiques a été annulée cette année...</h3>
 
         <div class="img">
-            <a href=""><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Cyclisme.svg"
+            <a href="index.php?p=article"><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Cyclisme.svg"
                     alt=""></a>
             <a href="index.php?p=article"><img class="image"
-                    src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1200/https://fflose.com/wp-content/uploads/2020/04/12042020-Paris-Roubaix.jpg"
+                    src="assests/img/12042020-Paris-Roubaix.jpg"
                     alt=""></a>
         </div>
 
@@ -57,10 +57,10 @@
             que tu n’as pu vivre que dans tes...</h3>
 
         <div class="img">
-            <a href=""><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Football.svg"
+            <a href="index.php?p=article"><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Football.svg"
                     alt=""></a>
             <a href="index.php?p=article"><img class="image"
-                    src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1200/https://fflose.com/wp-content/uploads/2020/04/13042020-Lens-EN-C1.jpg"
+                    src="assests/img/13042020-Lens-EN-C1.jpg"
                     alt=""></a>
         </div>
 
@@ -81,10 +81,10 @@
             gros lot en passant un combiné de plusieurs matchs, puis...</h3>
 
         <div class="img">
-            <a href=""><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Autres.svg"
+            <a href="index.php?p=article"><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Autres.svg"
                     alt=""></a>
             <a href="index.php?p=article"><img class="image"
-                    src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_880/https://fflose.com/wp-content/uploads/2020/04/paris-FFL.png"
+                    src="assests/img/paris-FFL.png"
                     alt=""></a>
         </div>
 
@@ -103,10 +103,10 @@
         <h3 class="subtitle">On passe à la balle Orange aujourd’hui pour le Quiz du jour de la FFL. Et, si vous avez regardé le documentaire sur Tony Parker,...</h3>
 
         <div class="img">
-            <a href=""><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Basketball.svg"
+            <a href="index.php?p=article"><img class="logo" src="https://fflose.com/wp-content/uploads/2017/10/Picto-Basketball.svg"
                     alt=""></a>
             <a href="index.php?p=article"><img class="image"
-                    src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1200/https://fflose.com/wp-content/uploads/2020/03/27032020-Fran%C3%A7ais-en-NBA-1.jpg"
+                    src="assests/img/27032020-Francais-en-NBA-1-1024x538.jpg"
                     alt=""></a>
         </div>
 
