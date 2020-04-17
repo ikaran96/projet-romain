@@ -17,7 +17,10 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/839df3b8b1.js"></script>
 
+</head>
 
+<body>
+    
     <?php include 'include/nav.php'; ?>
 
     <div id="page">

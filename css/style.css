@@ -34,6 +34,10 @@ main .top-card-text .top-card-title,
     text-decoration: none;
 }
 
+.top-card-title:visited {
+    color: var(--colorPrimary);
+}
+
 #page .bar h2 {
     color: var(--colorPrimary);
     font-size: 2.2em;
@@ -130,6 +134,69 @@ main .top-card-text .top-card-title,
     color: var(--colorPrimary);
 }
 
+/* Mini-cards CSS */
+
+#mini-cards{
+    margin: 1em;
+}
+
+#mini-cards .minicard {
+    margin-bottom: 3em;
+}
+
+#mini-cards .title-minicard {
+    font-family: var(--fontTitleArticle);
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 1em 0em;
+}
+
+#mini-cards .minicard-tag .tag-word {
+    display: inline-block;
+    margin-right: 0.2em;
+}
+
+#mini-cards .minicard-img {
+    position: relative;
+    margin-top: 0.5em;
+    height: 32vh;
+}
+
+#mini-cards .minicard-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#mini-cards .minicard-img .icon {
+    position: absolute;
+    top: -1em;
+    left: 0.5em;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--colorPrimary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2em;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 0 2px 3px #000000c2;
+}
+
+#mini-cards .minicard .top-card-text {
+    padding: 0em;
+}
+
+#mini-cards .minicard .date-from{
+    border-top : 1px solid;
+    border-color: var(--colorBgLight);
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+}
+/* end Mini-cards CSS*/
+
 @media only screen and (min-width: 700px) {
     #page {
         display: grid;
@@ -162,7 +229,16 @@ main .top-card-text .top-card-title,
     .article>* {
         margin: 0.5em;
     }
-
+    /* Mini-cards CSS */
+    #mini-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2em;
+    }
+    #mini-cards .title-minicard {
+        grid-column: span 2;
+    }
+    /* end Mini-cards CSS*/
 }
 
 @media only screen and (min-width: 900px) {
@@ -181,12 +257,22 @@ main .top-card-text .top-card-title,
     .top-card-img {
         width: 165%;
     }
-
     .img-art {
         width: auto;
     }
     .title-art {
         font-size: 2.6em;
     }
-
+    /* Mini-cards CSS */
+    #mini-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #mini-cards .title-minicard {
+        grid-column: span 3;
+    }
+    #mini-cards .minicard-img {
+        height: 15vh;
+        width: 15vw;
+    }
+    /* end Mini-cards CSS*/
 }
