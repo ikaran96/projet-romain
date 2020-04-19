@@ -30,11 +30,29 @@
             </ul>
         </div>
 
-        <div class="burger">
-            <a href=""><i class="fas fa-bars"></i></a>
+        <div class="burger" onclick="openNav()">
+            <a><i class="fas fa-bars"></i></a>
         </div>
 
+        
     </div>
+    
+    <!-- Overlay content -->
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <a href="#">Catégorie 1</a>
+            <a href="#">Catégorie 2</a>
+            <a href="#">Catégorie 3</a>
+            <a href="#">Catégorie 4</a>
+        </div>
+    </div>
+
+
 
     <div id="navbar">
         <ul>
@@ -89,7 +107,8 @@
 
             <li>
                 <a href="">
-                    <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://fflose.com/wp-content/uploads/2019/12/Capture-d%E2%80%99e%CC%81cran-2019-12-30-a%CC%80-00.44.02-150x150.png" alt="">
+                    <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://fflose.com/wp-content/uploads/2019/12/Capture-d%E2%80%99e%CC%81cran-2019-12-30-a%CC%80-00.44.02-150x150.png"
+                        alt="">
                     <span>FFL D'or</span>
                 </a>
             </li>

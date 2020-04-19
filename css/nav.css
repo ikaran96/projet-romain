@@ -1,5 +1,5 @@
 /* The Overlay (background) */
-.overlay {
+#nav .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: 0;
@@ -15,50 +15,58 @@
     /* Black w/opacity */
     overflow-x: hidden;
     /* Disable horizontal scroll */
-    transition: 0.5s;
+    transition: 0.3s;
     /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
-.overlay-content {
+#nav .overlay-content {
     position: relative;
-    top: 25%;
+    top: 2vh;
     /* 25% from the top */
-    width: 100%;
-    /* 100% width */
-    text-align: center;
-    /* Centered text/links */
-    margin-top: 30px;
+    margin: 30px;
     /* 30px top margin to avoid conflict with the close button on smaller screens */
+    border-bottom: 1px solid var(--colorBgLight);
+    padding-bottom: 1em;
 }
 
 /* The navigation links inside the overlay */
-.overlay a {
+#nav .overlay a {
+    font-family: var(--fontTitleArticle);
+    font-size: 1.5em;
+    font-weight: 400;
     padding: 8px;
     text-decoration: none;
-    font-size: 2em;
     color: var(--colorPrimary);
     display: block;
     /* Display block instead of inline */
     transition: 0.3s;
     /* Transition effects on hover (color) */
+    white-space: nowrap;
+    /* prevent the text to go on the next line when the width of nav changes */
 }
 
-.overlay .closebtn {
+/* When you mouse over the navigation links, change their color */
+#nav .overlay a:hover, .overlay a:focus {
+    color: var(--colorSecondary);
+  }
+
+#nav .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 60px;
+    color: white;
+    background-color: var(--colorPrimary);
+    padding: 0;
+    height: 25px;
+    width: 25px;
+    text-align: center;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 1.5em
-    }
 
-    .overlay .closebtn {
-        font-size: 40px;
+    #nav .overlay .closebtn {
         top: 15px;
         right: 35px;
     }

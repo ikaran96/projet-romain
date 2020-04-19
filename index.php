@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/var.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
 
     <script src="assests/font-awesome/all.min.js"></script>
 
@@ -48,7 +49,8 @@
     <!-- footer -->
     <?php include 'include/footer.php'; ?>
     
-
+    <!-- script nav mobile -->
+    <script src="functions/nav.js"></script>
 
 </body>
 
