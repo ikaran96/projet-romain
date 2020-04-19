@@ -7,6 +7,10 @@
     --colorBgLight: #ececec;
     --colorText: black;
     --colorTextLight: #a3a3a3;
+    --colorBottom:#001126;
+    --colorFootertext: white;
+    --colorFooterBottomtext: #757E8A;
+    --colorFooterBottomCopy:#2E3C4D;
 
     /* font */
     --fontText: 'Roboto', sans-serif;
