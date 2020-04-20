@@ -11,7 +11,7 @@
         </div>
 
         <div class="center">
-            <a href="index.php"><img src="assests/logo/logo.png" alt=""></a>
+            <a href="index.php"><img src="assests/logo/logo1.png" alt=""></a>
         </div>
 
         <div class="menu">
@@ -30,11 +30,28 @@
             </ul>
         </div>
 
-        <div class="burger">
-            <a href=""><i class="fas fa-bars"></i></a>
+        <div class="burger" onclick="openNav()">
+            <a><i class="fas fa-bars"></i></a>
         </div>
 
     </div>
+
+
+    <!-- Overlay content -->
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <a href="#">Catégorie 1</a>
+            <a href="#">Catégorie 2</a>
+            <a href="#">Catégorie 3</a>
+            <a href="#">Catégorie 4</a>
+        </div>
+    </div>
+
 
     <div id="navbar">
         <ul>

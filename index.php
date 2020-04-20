@@ -48,7 +48,7 @@
     <!-- footer -->
     <?php include 'include/footer.php'; ?>
     
-
+    <script src="assests/functions/nav.js"></script>
 
 </body>
 
