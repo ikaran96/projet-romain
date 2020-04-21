@@ -1,0 +1,46 @@
+#admin-art-list .admin-art-list-title div {
+    display: flex;
+    margin: 1em;
+    align-items: center;
+}
+
+#admin-art-list .admin-art-list-title div img {
+    margin-right: 1em;
+}
+
+#admin-art-list .admin-art-list-title div h2 {
+    font-size: 1.5em;
+    font-family: var(--fontTitleArticle);
+    color: var(--colorPrimary);
+    font-weight: 500;
+}
+
+#admin-art-list .admin-art-list-title form select {
+    justify-content: flex-end;
+}
+
+#admin-art-list .admin-art-list-title form select {
+    height: 40px;
+    letter-spacing: 0.02em;
+    padding: 0px 10px;
+}
+
+#admin-art-list .admin-art-list-title form .search-bar {
+    width: 100%;
+}
+
+#admin-art-list .admin-art-list-title .search-bar input {
+    border: 1px solid var(--colorFooterBottomtext);
+    border-radius: 10px;
+    font-size: 1em;
+    height: 34px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+#admin-art-list .admin-art-list-title .search-bar img {
+    position: relative;
+    width: auto;
+    height: 20px;
+    right: 32px;
+}
