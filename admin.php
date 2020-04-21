@@ -27,16 +27,33 @@
     <div id="page">
 
         <!-- aside -->
-        <?php include 'include/admin/asidebar.php'; ?>
+        <aside id="adminAside">
+            <?php include 'include/admin/asidebar.php'; ?>
+        </aside>
+        
 
         <!-- main -->
-        <?php 
-            if (empty($_GET['p'])) {
-                include 'include/admin/home.php'; 
-            } else {
-                include 'include/admin/home.php';
-            }
-        ?>
+        <main id="adminMain">
+            <!-- container pour le max width -->
+            <div class="containerMain">
+
+                <!-- content -->
+                <?php 
+                    if (empty($_GET['p'])) {
+                        include 'include/admin/home.php'; 
+                    } elseif ($_GET['p'] == 'articles') {
+                        include 'include/admin/articles.php'; 
+                    } elseif ($_GET['p'] == 'utilisateurs') {
+                        include 'include/admin/utilisateurs.php'; 
+                    } elseif ($_GET['p'] == 'historique') {
+                        include 'include/admin/historique.php'; 
+                    } else {
+                        include 'include/admin/home.php';
+                    }
+                ?>
+
+            </div>
+        </main>
 
     </div>
     

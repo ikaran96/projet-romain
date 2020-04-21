@@ -1,3 +1,4 @@
+/* Structure PAGE admin */
 #page {
     display: grid;
     height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) );
@@ -6,23 +7,56 @@
     max-width: 100%;
     margin: auto;
 }
-
 #page > * {
     margin: 0;
-    height: 100%;
 }
-
 #adminAside {
-    background-color: lightcoral;
+    background-color: lightcoral;  /* TEST */
+    padding-top: 2em;
+    text-align: center;
+    overflow: auto;
 }
-
+#adminAside > * {
+    margin-left: auto;
+    margin-right: auto;
+}
 #adminMain {
 }
-
 .containerMain {
-    background-color: lightseagreen;
-    height: inherit;
+    background-color: lightseagreen; /* TEST */
+    height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) - 4em);
+    padding: 2em;
     max-width: var(--maxWidth);
     margin: auto;
-    padding: 1em;
+    overflow: auto;
+}
+
+/* Aside Admin */
+#adminAside * {
+    display: block;
+}
+#adminAside ul {
+    display: flex;
+    flex-direction: column;
+}
+#adminAside ul > li {
+    margin-bottom: 1em;
+}
+#adminAside ul a > * {
+    margin: 0 auto;
+}
+#adminAside ul a {
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+#adminAside ul a:hover {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+}
+#adminAside ul img {
+    margin-bottom: 5px;
+    width: 45px;
+    height: 45px;
 }
