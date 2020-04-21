@@ -1,0 +1,28 @@
+#page {
+    display: grid;
+    height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) );
+    grid-template-columns: 100px 1fr;
+    grid-column-gap: 0;
+    max-width: 100%;
+    margin: auto;
+}
+
+#page > * {
+    margin: 0;
+    height: 100%;
+}
+
+#adminAside {
+    background-color: lightcoral;
+}
+
+#adminMain {
+}
+
+.containerMain {
+    background-color: lightseagreen;
+    height: inherit;
+    max-width: var(--maxWidth);
+    margin: auto;
+    padding: 1em;
+}

@@ -13,7 +13,7 @@
 }
     /* nav 1 */
 #nav #header {
-    height: 90px;    
+    height: var(--heightNav1);    
     display: -webkit-box;    
     display: flex;
     font-size: 1.6em;
@@ -46,7 +46,7 @@
     /* nav 2 */
 #nav #navbar {
     background-color: var(--colorPrimary);
-    height: 90px;
+    height: var(--heightNav2);
     color: var(--colorFootertext);
     display: -webkit-box;
     display: flex;
