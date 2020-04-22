@@ -11,7 +11,8 @@
     --colorFootertext: white;
     --colorFooterBottomtext: #757E8A;
     --colorFooterBottomCopy:#2E3C4D;
-
+    --colorCardbg:#FAF9F9;
+ 
     /* font */
     --fontText: 'Roboto', sans-serif;
     --fontTitleArticle: 'Roboto Slab', sans-serif;

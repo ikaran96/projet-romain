@@ -1,46 +1,51 @@
 /* Structure PAGE admin */
-#page {
-    display: grid;
-    height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) );
-    grid-template-columns: 100px 1fr;
-    grid-column-gap: 0;
-    max-width: 100%;
-    margin: auto;
-}
 #page > * {
     margin: 0;
 }
 #adminAside {
-    background-color: lightcoral;  /* TEST */
-    padding-top: 2em;
-    text-align: center;
-    overflow: auto;
+    position: fixed;
+    bottom: 0;
+    height: 4em;
+    width: 100%;
+    background-color: var(--colorBgLight);
 }
 #adminAside > * {
     margin-left: auto;
     margin-right: auto;
+    font-size: 0.7em;
 }
 #adminMain {
+    height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) - 4em);
+    overflow: auto;
 }
 .containerMain {
-    background-color: lightseagreen; /* TEST */
-    height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) - 4em);
     padding: 2em;
     max-width: var(--maxWidth);
     margin: auto;
-    overflow: auto;
 }
-
 /* Aside Admin */
 #adminAside * {
     display: block;
 }
-#adminAside ul {
+#adminAside {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    overflow: auto;
+}
+#adminAside .avatar {
+    display: none;
+}
+#adminAside > * {
+    display: -webkit-box;
+    display: flex;
+}
+#adminAside ul {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 #adminAside ul > li {
-    margin-bottom: 1em;
+    margin: auto;
 }
 #adminAside ul a > * {
     margin: 0 auto;
@@ -57,6 +62,200 @@
 }
 #adminAside ul img {
     margin-bottom: 5px;
-    width: 45px;
-    height: 45px;
+    width: 3em;
+    height: 3em;
+}
+#adminAside ul li:not(:last-child) {
+    border-right: 1px solid var(--colorPrimary);
+    padding: 0 1em;
+}
+#adminAside ul li:last-child {
+    padding-left: 1em;
+}
+
+/* Home Admin */
+.cards-home{
+    text-align:center;
+}
+.admin-card-home{
+    background:var(--colorCardbg);
+    /* width:70%; */
+    max-width: 300px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:30px;
+    height:270px;
+    border-radius:25px;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.253);
+}
+.svg-admin-home{
+    margin-top:30px;
+}
+.admin-title-home{
+    font-family: var(--fontTitleArticle);
+    color: var(--colorPrimary);
+    font-weight:600;
+    font-size:130%;
+    margin-top:20px;
+}
+.admin-description-home{
+    font-family: var(--fontSubTitleArticle);
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:14px;
+    color: var(--colorTextLight);
+    margin-top:10px;
+}
+.admin-button-home{
+    background:var(--colorSecondary);
+    border: 3px solid var(--colorSecondary);
+    font-family: var(--fontSubTitleArticle);
+    color:var(--colorCardbg);
+    width:60%;
+    height:13%;
+    font-size:14px;
+    border-radius:20px;
+    margin-top:20px;
+    transition: 0.3s ease-in;
+    font-weight:600;
+   
+}
+.admin-button-home:hover{
+    cursor:pointer;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.253);
+    border: 3px solid var(--colorSecondary);
+    background-color: var(--colorCardbg);
+    color: var(--colorSecondary);
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+    /* Sturcture */
+    #page {
+        display: grid;
+        height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) );
+        grid-template-columns: 100px 1fr;
+        grid-column-gap: 0;
+        max-width: 100%;
+        margin: auto;
+    }
+    #adminMain {
+        height: 100%;
+    }
+    #adminAside {
+        display: block;
+        height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) - 2em);
+        position: unset;
+        padding-top: 2em;
+        text-align: center;
+        overflow: auto;
+    }
+    /* Aside admin */
+    #adminAside .avatar {
+        display: block;
+        margin-bottom: 3em;
+    }
+    #adminAside ul > li {
+        margin: 0;
+        margin-bottom: 1em;
+        padding: 0!important;
+        border: none!important;
+    }
+    #adminAside .avatar img {
+        width: 5em;
+        height: 5em;
+        border: 1px solid var(--colorPrimary);
+        border-radius: 100%;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        margin-bottom: 0.8em;
+        align-self: center;
+    }
+    #adminAside .avatar * {
+        display: inline-block;
+    }
+    #adminAside > * {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+    #adminAside ul li:not(:last-child)::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--colorPrimary);
+        margin-top: 1em;
+        opacity: 0.3;
+    }
+    /* Home Admin */
+    .cards-home{
+        margin-top:30px;
+        display:flex;
+        justify-content: space-around;
+    }
+    .admin-card-home{
+        width:30%;
+        height:220px;
+    }
+    .svg-admin-home{
+        width:40px;
+        height:40px;
+        margin-top:10px;
+    }
+    .admin-title-home{
+    margin-top:10px;
+    font-size:100%;
+    }
+    .admin-description-home{
+        font-size:13px;
+        margin-top:10px;
+    }
+    .admin-button-home{
+        width:60%;
+        height:13%;
+        font-size:70%;
+        border-radius:20px;
+        margin-top:15px;
+    }  
+}
+
+
+@media only screen and (min-width:900px){
+    .cards-home{
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:50px;
+    }
+    .admin-card-home{
+        width:30%;
+        height:300px;  
+    }
+    .svg-admin-home{
+        height:70px;
+        width:70px;
+        margin-top:18px;
+    }
+    .admin-title-home{
+        font-size:20px;
+    }
+    .admin-description-home{
+        font-size:15px;
+        margin-top:15px;
+    }
+    .admin-button-home{
+        margin-top:30px;
+    }
 }
