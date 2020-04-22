@@ -11,6 +11,7 @@
     --colorFootertext: white;
     --colorFooterBottomtext: #757E8A;
     --colorFooterBottomCopy:#2E3C4D;
+    --colorCardbg:#FAF9F9;
 
     /* font */
     --fontText: 'Roboto', sans-serif;
@@ -19,10 +20,8 @@
 
 
     /* size  */
-    --heightNav: 50px;
-    --maxWidth: 1000px;
+    --heightNav1: 90px;
+    --heightNav2: 90px;
+    --maxWidth: 1200px;
+
 }
-
-
-
-

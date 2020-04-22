@@ -1,0 +1,213 @@
+/* Structure PAGE admin */
+#page {
+    display: grid;
+    height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) );
+    grid-template-columns: 100px 1fr;
+    grid-column-gap: 0;
+    max-width: 100%;
+    margin: auto;
+}
+#page > * {
+    margin: 0;
+}
+#adminAside {
+    background-color: lightcoral;  /* TEST */
+    padding-top: 2em;
+    text-align: center;
+    overflow: auto;
+}
+#adminAside > * {
+    margin-left: auto;
+    margin-right: auto;
+}
+#adminMain {
+}
+.containerMain {
+    background-color: var(--colorCardbg);
+    height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) - 4em);
+    padding: 2em;
+    max-width: var(--maxWidth);
+    margin: auto;
+    overflow: auto;
+}
+
+/* Aside Admin */
+#adminAside * {
+    display: block;
+}
+#adminAside ul {
+    display: flex;
+    flex-direction: column;
+}
+#adminAside ul > li {
+    margin-bottom: 1em;
+}
+#adminAside ul a > * {
+    margin: 0 auto;
+}
+#adminAside ul a {
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+#adminAside ul a:hover {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+}
+#adminAside ul img {
+    margin-bottom: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+/* Cards */
+
+.cards-home{
+    text-align:center;
+   
+}
+
+.admin-card-home{
+    background:var(--colorCardbg);
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:30px;
+    height:270px;
+    border-radius:25px;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.253);
+}
+
+.svg-admin-home{
+    margin-top:30px;
+}
+
+.admin-title-home{
+    font-family: var(--fontTitleArticle);
+    color: var(--colorPrimary);
+    font-weight:600;
+    font-size:130%;
+    margin-top:20px;
+}
+
+.admin-description-home{
+    font-family: var(--fontSubTitleArticle);
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:14px;
+    color: var(--colorTextLight);
+    margin-top:10px;
+}
+
+.admin-button-home{
+    background:var(--colorSecondary);
+    border: 3px solid var(--colorSecondary);
+    font-family: var(--fontSubTitleArticle);
+    color:var(--colorCardbg);
+    width:60%;
+    height:13%;
+    font-size:14px;
+    border-radius:20px;
+    margin-top:20px;
+    transition: 0.3s ease-in;
+    font-weight:600;
+   
+}
+
+.admin-button-home:hover{
+    cursor:pointer;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.253);
+    transition: 0.3s ease-in;
+}
+
+@media only screen and (min-width:700px){
+    .cards-home{
+        margin-top:30px;
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .admin-card-home{
+        width:30%;
+        height:220px;
+    }
+    .svg-admin-home{
+        width:40px;
+        height:40px;
+        margin-top:10px;
+    }
+    
+    .admin-title-home{
+    margin-top:10px;
+    font-size:100%;
+    }
+
+    .admin-description-home{
+        font-size:13px;
+        margin-top:10px;
+    }
+
+    .admin-button-home{
+        width:60%;
+        height:13%;
+        font-size:70%;
+        border-radius:20px;
+        margin-top:15px;
+    }   
+
+}
+
+@media only screen and (min-width:900px){
+    .cards-home{
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:50px;
+    }
+
+    .admin-card-home{
+        width:30%;
+        height:300px;  
+    }
+
+    .svg-admin-home{
+        height:70px;
+        width:70px;
+        margin-top:18px;
+    }
+
+    .admin-title-home{
+        font-size:20px;
+    }
+
+    .admin-description-home{
+        font-size:15px;
+        margin-top:15px;
+    }
+
+    .admin-button-home{
+        margin-top:30px;
+    }
+
+
+}
+
+@media only screen and (min-width:1000px){
+    .admin-card-home{
+        width:23%; 
+    }
+
+}
+
+@media only screen and (min-width:1300px){
+    .cards-home{
+        justify-content: space-evenly;
+    }
+
+    .admin-card-home{
+        width:20%;}
+
+}
