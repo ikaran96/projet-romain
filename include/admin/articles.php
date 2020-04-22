@@ -43,7 +43,12 @@
             <tbody>
                 <tr>
                     <td class="column1">#100</td>
-                    <td class="column2"><span></span></td>
+                    <td class="column2">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
                     <td class="column3">Titre de l'article</td>
                     <td class="column4">12/12/2020</td>
                     <td class="column5">Utilisateur</td>
@@ -55,25 +60,52 @@
             <tbody>
                 <tr>
                     <td class="column1">#100</td>
-                    <td class="column2"><span></span></td>
+                    <td class="column2">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
                     <td class="column3">Titre de l'article</td>
                     <td class="column4">12/12/2020</td>
                     <td class="column5">Utilisateur</td>
-                    <td class="column6">Sport; Baguette</td>
-                    <td class="column7">Éditer</td>
-                    <td class="column8">Supprimer</td>
+                    <td class="column6">Sport;<br>Baguette</td>
+                    <td class="column7"><a>Éditer</a></td>
+                    <td class="column8"><a>Supprimer</a></td>
                 </tr>
             </tbody>
             <tbody>
                 <tr>
                     <td class="column1">#100</td>
-                    <td class="column2"><span></span></td>
+                    <td class="column2">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
                     <td class="column3">Titre de l'article</td>
                     <td class="column4">12/12/2020</td>
                     <td class="column5">Utilisateur</td>
-                    <td class="column6">Sport<br>Baguette</td>
-                    <td class="column7">Éditer</td>
-                    <td class="column8">Supprimer</td>
+                    <td class="column6">Sport;<br>Baguette</td>
+                    <td class="column7"><a>Éditer</a></td>
+                    <td class="column8"><a>Supprimer</a></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td class="column1">#100</td>
+                    <td class="column2">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                    <td class="column3">Titre de l'article</td>
+                    <td class="column4">12/12/2020</td>
+                    <td class="column5">Utilisateur</td>
+                    <td class="column6">Sport;<br>Baguette</td>
+                    <td class="column7"><a>Éditer</a></td>
+                    <td class="column8"><a>Supprimer</a></td>
                 </tr>
             </tbody>
         </table>
