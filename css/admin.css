@@ -16,7 +16,7 @@
 }
 #adminMain {
     height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) - 4em);
-    overflow: auto;
+    overflow-y: auto;
 }
 .containerMain {
     padding: 2em;
