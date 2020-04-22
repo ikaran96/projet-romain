@@ -13,7 +13,7 @@
 }
     /* nav 1 */
 #nav #header {
-    height: 90px;    
+    height: var(--heightNav1);    
     display: -webkit-box;    
     display: flex;
     font-size: 1.6em;
@@ -21,7 +21,6 @@
     margin: 0 auto;
 }
 #nav #header img {
-    height: 100%;
     width: 100%;
 }
 #nav #header > * {
@@ -38,8 +37,7 @@
             flex-grow: 100;
 }
 #nav #header .center a {
-    height: 50px;
-    width: 55px;
+    width: 70px;
 }
 #nav #header .menu {
     display: none;
@@ -48,7 +46,7 @@
     /* nav 2 */
 #nav #navbar {
     background-color: var(--colorPrimary);
-    height: 90px;
+    height: var(--heightNav2);
     color: var(--colorFootertext);
     display: -webkit-box;
     display: flex;
@@ -772,6 +770,82 @@ main .top-card-text .top-card-title,
 }
 
 
+
+
+/* NAV JS */
+/* The Overlay (background) */
+#nav .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    right: 0;
+    top: 0;
+    background-color: white;
+    /* Black fallback color */
+    background-color: white;
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.3s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+#nav .overlay-content {
+    position: relative;
+    top: 2vh;
+    /* 25% from the top */
+    margin: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+    border-bottom: 1px solid var(--colorBgLight);
+    padding-bottom: 1em;
+}
+
+/* The navigation links inside the overlay */
+#nav .overlay a {
+    font-family: var(--fontTitleArticle);
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 8px;
+    text-decoration: none;
+    color: var(--colorPrimary);
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+    white-space: nowrap;
+    /* prevent the text to go on the next line when the width of nav changes */
+}
+
+/* When you mouse over the navigation links, change their color */
+#nav .overlay a:hover, .overlay a:focus {
+    color: var(--colorSecondary);
+  }
+
+#nav .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    color: white;
+    background-color: var(--colorPrimary);
+    padding: 0;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+
+    #nav .overlay .closebtn {
+        top: 15px;
+        right: 35px;
+    }
+}
 
 
 
