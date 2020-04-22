@@ -20,12 +20,10 @@
     margin-left: auto;
     margin-right: auto;
 }
-#adminMain {
-}
 .containerMain {
-    background-color: lightseagreen; /* TEST */
+    background-color: var(--colorBgLight); /* TEST */
     height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) - 4em);
-    padding: 2em;
+    padding: 1em;
     max-width: var(--maxWidth);
     margin: auto;
     overflow: auto;
@@ -59,4 +57,120 @@
     margin-bottom: 5px;
     width: 45px;
     height: 45px;
+}
+
+/* Tableau admin */
+#adminAside {
+    display: none;
+}
+#adminMain {
+    width: 100vw;
+}
+.containerMain {
+    overflow: hidden;
+}
+#admin-art-list .admin-art-list-title div {
+    display: flex;
+    align-items: center;
+}
+
+#admin-art-list .admin-art-list-title .title img {
+    margin-right: 1em;
+}
+
+#admin-art-list .admin-art-list-title div h2 {
+    font-size: 1.5em;
+    font-family: var(--fontTitleArticle);
+    color: var(--colorPrimary);
+    font-weight: 500;
+}
+
+#admin-art-list .admin-art-list-title form div {
+    margin: 1em 0em;
+}
+
+#admin-art-list .admin-art-list-title form select {
+    appearance: none;
+    -webkit-appearance: none;
+    letter-spacing: 0.02em;
+    padding: 0px 10px;
+    width: 100%;
+    font-family: var(--colorFooterBottomtext);
+}
+
+#admin-art-list .admin-art-list-title form select,
+#admin-art-list .admin-art-list-title form .custom-select::after {
+    justify-content: flex-end;
+    height: 36px;
+    border-radius: 25px;
+}
+
+#admin-art-list .admin-art-list-title form .custom-select::after {
+    position: relative;
+    top: 11px;
+    right: 29px;
+    content: "\25bc";
+    color: var(--colorPrimary);
+    width: 0px;
+}
+
+#admin-art-list .admin-art-list-title form .search-bar {
+    width: calc(100% + 18px);
+    /* compensate for the search icon relatively positionned */
+}
+
+#admin-art-list .admin-art-list-title .search-bar input {
+    border: 1px solid var(--colorFooterBottomtext);
+    border-radius: 10px;
+    height: 34px;
+    border-radius: 25px;
+    width: 100%;
+    font-family: var(--colorFooterBottomtext);
+    padding: 0px 10px;
+}
+
+#admin-art-list .admin-art-list-title .search-bar img {
+    position: relative;
+    width: auto;
+    height: 20px;
+    right: 32px;
+}
+
+#admin-art-list .admin-table {
+    overflow-x: auto;
+    background-color: var(--colorFootertext);
+    font-family: var(--fontSubTitleArticle);
+}
+
+#admin-art-list .admin-table thead {
+    background-color: var(--colorPrimary);
+    color: var(--colorFootertext);
+    text-align: left;
+}
+
+#admin-art-list .admin-table thead,
+#admin-art-list .admin-table .column1 {
+    font-weight: 500;
+}
+
+#admin-art-list .admin-table tr {
+    text-justify: left;
+}
+
+#admin-art-list .admin-table th,
+#admin-art-list .admin-table td {
+    padding: 0.5em;
+    vertical-align: middle;
+}
+
+#admin-art-list .admin-table .column3 {
+    white-space: nowrap;
+}
+
+#admin-art-list .admin-table .column7 {
+    color: var(--colorPrimary);
+}
+
+#admin-art-list .admin-table .column8 {
+    color: var(--colorSecondary);
 }

@@ -1,1 +1,83 @@
-<h1>Articles</h1>
+<div id="admin-art-list">
+
+    <div class="admin-art-list-title">
+
+        <div class="title">
+            <img src="assests\logo\Icon awesome-newspaper.svg" alt="">
+            <h2>Gestion des articles</h2>
+        </div>
+
+        <form>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher un article">
+                <img src="assests/logo/Icon awesome-search.svg" alt="">
+            </div>
+
+            <div class="custom-select">
+                <select>
+                    <option value="0">Catégories</option>
+                    <option value="1">Baguette</option>
+                </select>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="admin-table">
+        <table>
+            <thead>
+                <tr class="admin-table-head">
+                    <th class="column1">#Id</th>
+                    <th class="column2">Activation</th>
+                    <th class="column3">Titre</th>
+                    <th class="column4">Crée le</th>
+                    <th class="column5">Crée par</th>
+                    <th class="column6">Catégories</th>
+                    <th class="column7"></th>
+                    <th class="column8"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="column1">#100</td>
+                    <td class="column2"><span></span></td>
+                    <td class="column3">Titre de l'article</td>
+                    <td class="column4">12/12/2020</td>
+                    <td class="column5">Utilisateur</td>
+                    <td class="column6">Sport;<br>Baguette</td>
+                    <td class="column7"><a>Éditer</a></td>
+                    <td class="column8"><a>Supprimer</a></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td class="column1">#100</td>
+                    <td class="column2"><span></span></td>
+                    <td class="column3">Titre de l'article</td>
+                    <td class="column4">12/12/2020</td>
+                    <td class="column5">Utilisateur</td>
+                    <td class="column6">Sport; Baguette</td>
+                    <td class="column7">Éditer</td>
+                    <td class="column8">Supprimer</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td class="column1">#100</td>
+                    <td class="column2"><span></span></td>
+                    <td class="column3">Titre de l'article</td>
+                    <td class="column4">12/12/2020</td>
+                    <td class="column5">Utilisateur</td>
+                    <td class="column6">Sport<br>Baguette</td>
+                    <td class="column7">Éditer</td>
+                    <td class="column8">Supprimer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
