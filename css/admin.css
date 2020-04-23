@@ -206,26 +206,17 @@
     width: 0px;
 }
 
-#admin-art-list .admin-art-list-title form .search-bar {
-    width: calc(100% + 18px);
-    /* compensate for the search icon relatively positionned */
-}
-
 #admin-art-list .admin-art-list-title .search-bar input {
-    border: 1px solid var(--colorFooterBottomtext);
-    border-radius: 10px;
-    height: 34px;
-    border-radius: 25px;
+    letter-spacing: 0.02em;
+    padding: 0px 10px;
     width: 100%;
     font-family: var(--colorFooterBottomtext);
-    padding: 0px 10px;
-}
-
-#admin-art-list .admin-art-list-title .search-bar img {
-    position: relative;
-    width: auto;
-    height: 20px;
-    right: 32px;
+    background-image: url(../assests/logo/Icon-awesome-search.svg);
+    background-repeat: no-repeat;
+    border: 1px solid var(--colorFooterBottomtext);
+    height: 34px;
+    border-radius: 25px;
+    background-position: bottom 9px right 12px;
 }
 
 #admin-art-list .admin-table {
@@ -271,10 +262,12 @@
 
 #admin-art-list .admin-table .column7 {
     color: var(--colorPrimary);
+    font-weight: 500;
 }
 
 #admin-art-list .admin-table .column8 {
     color: var(--colorSecondary);
+    font-weight: 500;
 }
 
 .admin-table .switch {
@@ -444,17 +437,14 @@ input:checked+.slider:before {
         margin-top: 15px;
     }
 
+    /* Tableau admin */
     #admin-art-list .admin-art-list-title {
         display: flex;
         justify-content: space-between;
     }
 
-    #admin-art-list .admin-art-list-title form {
-        display: flex;
-    }
-
     #admin-art-list .admin-art-list-title form .custom-select select {
-        width: 170px;
+        width: 195px;
     }
 }
 
@@ -489,4 +479,23 @@ input:checked+.slider:before {
     .admin-button-home {
         margin-top: 30px;
     }
+
+    /* Tableau admin */
+    #admin-art-list .admin-art-list-title form {
+        display: flex;
+    }
+    #admin-art-list .admin-art-list-title .search-bar {
+        margin-right: 1em;
+        width: 325px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #admin-art-list .admin-art-list-title .search-bar input {
+        width: 195px;
+        transition: 0.3s;
+    }
+    #admin-art-list .admin-art-list-title .search-bar input:focus {
+        width: 100%;
+    }
+
 }

@@ -11,7 +11,6 @@
 
             <div class="search-bar">
                 <input type="text" placeholder="Rechercher un article">
-                <img src="assests/logo/Icon awesome-search.svg" alt="">
             </div>
 
             <div class="custom-select">
