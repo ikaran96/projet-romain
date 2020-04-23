@@ -277,6 +277,8 @@
     height: 30px;
 }
 
+
+
 /* Hide default HTML checkbox */
 .admin-table .switch input {
     opacity: 0;
@@ -329,6 +331,15 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+/* User admin table */
+#admin-art-list .title-admin-user {
+    flex: 1;
+}
+
+#admin-art-list .user-table .column2 {
+    text-align: left;
 }
 
 @media only screen and (min-width: 700px) {
@@ -492,10 +503,11 @@ input:checked+.slider:before {
     }
     #admin-art-list .admin-art-list-title .search-bar input {
         width: 195px;
-        transition: 0.3s;
+        transition: width 0.4s ease-out, border-radius 0.3s;
     }
     #admin-art-list .admin-art-list-title .search-bar input:focus {
         width: 100%;
+        border-radius: 0px;
     }
 
 }
