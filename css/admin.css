@@ -1,5 +1,5 @@
 /* Structure PAGE admin */
-#page > * {
+#page>* {
     margin: 0;
 }
 #adminAside {
@@ -9,20 +9,22 @@
     width: 100%;
     background-color: var(--colorBgLight);
 }
-#adminAside > * {
+#adminAside>* {
     margin-left: auto;
     margin-right: auto;
     font-size: 0.7em;
 }
 #adminMain {
-    height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) - 4em);
+    height: calc(100vh - (var(--heightNav1) + var(--heightNav2)) - 4em);
     overflow-y: auto;
+    background-color: var(--colorCardbg);
 }
 .containerMain {
     padding: 2em;
     max-width: var(--maxWidth);
     margin: auto;
 }
+
 /* Aside Admin */
 #adminAside * {
     display: block;
@@ -35,7 +37,7 @@
 #adminAside .avatar {
     display: none;
 }
-#adminAside > * {
+#adminAside>* {
     display: -webkit-box;
     display: flex;
 }
@@ -44,10 +46,10 @@
     width: -moz-fit-content;
     width: fit-content;
 }
-#adminAside ul > li {
+#adminAside ul>li {
     margin: auto;
 }
-#adminAside ul a > * {
+#adminAside ul a>* {
     margin: 0 auto;
 }
 #adminAside ul a {
@@ -58,7 +60,7 @@
 }
 #adminAside ul a:hover {
     -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 #adminAside ul img {
     margin-bottom: 5px;
@@ -74,61 +76,121 @@
 }
 
 /* Home Admin */
-.cards-home{
-    text-align:center;
+.cards-home {
+    text-align: center;
 }
-.admin-card-home{
-    background:var(--colorCardbg);
+.admin-card-home {
+    background: var(--colorCardbg);
     /* width:70%; */
     max-width: 300px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:30px;
-    height:270px;
-    border-radius:25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: 270px;
+    border-radius: 25px;
     text-align: center;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.253);
 }
-.svg-admin-home{
-    margin-top:30px;
+.svg-admin-home {
+    margin-top: 30px;
 }
-.admin-title-home{
+.admin-title-home {
     font-family: var(--fontTitleArticle);
     color: var(--colorPrimary);
-    font-weight:600;
-    font-size:130%;
-    margin-top:20px;
+    font-weight: 600;
+    font-size: 130%;
+    margin-top: 20px;
 }
-.admin-description-home{
+.admin-description-home {
     font-family: var(--fontSubTitleArticle);
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
-    font-size:14px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
     color: var(--colorTextLight);
-    margin-top:10px;
+    margin-top: 10px;
 }
-.admin-button-home{
-    background:var(--colorSecondary);
+.admin-button-home {
+    background: var(--colorSecondary);
     border: 3px solid var(--colorSecondary);
     font-family: var(--fontSubTitleArticle);
-    color:var(--colorCardbg);
-    width:60%;
-    height:13%;
-    font-size:14px;
-    border-radius:20px;
-    margin-top:20px;
+    color: var(--colorCardbg);
+    width: 60%;
+    height: 13%;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-top: 20px;
     transition: 0.3s ease-in;
-    font-weight:600;
-   
+    font-weight: 600;
 }
-.admin-button-home:hover{
-    cursor:pointer;
+.admin-button-home:hover {
+    cursor: pointer;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.253);
     border: 3px solid var(--colorSecondary);
     background-color: var(--colorCardbg);
     color: var(--colorSecondary);
 }
+
+/* Historique */
+#historique {
+    border: 1px solid black;
+    width: 100%;
+    margin: auto;
+}
+#historique tr>td {
+    border: 1px solid black;
+    padding: 10px;
+}
+#historique tr:not(:first-child)>td > * {
+    vertical-align: middle;
+    margin: 0 1em;
+}
+#historique tr:first-child > td {
+    border: hidden;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+}
+#historique .onglet input {
+    display: none;
+}
+#historique .onglet .btm {
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--colorPrimary);
+    transition: 0.1s ease-in-out;
+}
+#historique .onglet .btm:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--colorPrimary);
+}
+#historique .onglet input[type="radio"]:checked+label>span {
+    cursor: default;
+    color: white;
+    background-color: var(--colorPrimary);
+}
+#historique tr>td.tdhidden {
+    visibility: hidden;
+    padding: 0;
+    height: 15px;
+}
+#historique td > img.avatar {
+    width: 2em;
+    height: 2em;
+    border: 1px solid var(--colorPrimary);
+    border-radius: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    align-self: center;
+}
+#historique td > img.icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+
 
 
 
@@ -140,54 +202,63 @@
 
 
 @media only screen and (min-width: 700px) {
+
     /* Sturcture */
     #page {
         display: grid;
-        height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) );
+        height: calc(100vh - (var(--heightNav1) + var(--heightNav2)));
         grid-template-columns: 100px 1fr;
         grid-column-gap: 0;
         max-width: 100%;
         margin: auto;
     }
+
     #adminMain {
         height: 100%;
     }
+
     #adminAside {
         display: block;
-        height: calc( 100vh - ( var(--heightNav1) + var(--heightNav2) ) - 2em);
+        height: calc(100vh - (var(--heightNav1) + var(--heightNav2)) - 2em);
         position: unset;
         padding-top: 2em;
         text-align: center;
         overflow: auto;
     }
+
     /* Aside admin */
     #adminAside .avatar {
         display: block;
         margin-bottom: 3em;
     }
-    #adminAside ul > li {
+
+    #adminAside ul>li {
         margin: 0;
         margin-bottom: 1em;
-        padding: 0!important;
-        border: none!important;
+        padding: 0 !important;
+        border: none !important;
     }
+
     #adminAside .avatar img {
         width: 5em;
         height: 5em;
         border: 1px solid var(--colorPrimary);
         border-radius: 100%;
-        box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         margin-bottom: 0.8em;
         align-self: center;
     }
+
     #adminAside .avatar * {
         display: inline-block;
     }
-    #adminAside > * {
+
+    #adminAside>* {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-                flex-direction: column;
+        flex-direction: column;
     }
+
     #adminAside ul li:not(:last-child)::after {
         content: "";
         display: block;
@@ -199,63 +270,74 @@
         margin-top: 1em;
         opacity: 0.3;
     }
+
     /* Home Admin */
-    .cards-home{
-        margin-top:30px;
-        display:flex;
+    .cards-home {
+        margin-top: 30px;
+        display: flex;
         justify-content: space-around;
     }
-    .admin-card-home{
-        width:30%;
-        height:220px;
+
+    .admin-card-home {
+        width: 30%;
+        height: 220px;
     }
-    .svg-admin-home{
-        width:40px;
-        height:40px;
-        margin-top:10px;
+
+    .svg-admin-home {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
     }
-    .admin-title-home{
-    margin-top:10px;
-    font-size:100%;
+
+    .admin-title-home {
+        margin-top: 10px;
+        font-size: 100%;
     }
-    .admin-description-home{
-        font-size:13px;
-        margin-top:10px;
+
+    .admin-description-home {
+        font-size: 13px;
+        margin-top: 10px;
     }
-    .admin-button-home{
-        width:60%;
-        height:13%;
-        font-size:70%;
-        border-radius:20px;
-        margin-top:15px;
-    }  
+
+    .admin-button-home {
+        width: 60%;
+        height: 13%;
+        font-size: 70%;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
 }
 
 
-@media only screen and (min-width:900px){
-    .cards-home{
-        width:100%;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:50px;
+@media only screen and (min-width:900px) {
+    .cards-home {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
     }
-    .admin-card-home{
-        width:30%;
-        height:300px;  
+
+    .admin-card-home {
+        width: 30%;
+        height: 300px;
     }
-    .svg-admin-home{
-        height:70px;
-        width:70px;
-        margin-top:18px;
+
+    .svg-admin-home {
+        height: 70px;
+        width: 70px;
+        margin-top: 18px;
     }
-    .admin-title-home{
-        font-size:20px;
+
+    .admin-title-home {
+        font-size: 20px;
     }
-    .admin-description-home{
-        font-size:15px;
-        margin-top:15px;
+
+    .admin-description-home {
+        font-size: 15px;
+        margin-top: 15px;
     }
-    .admin-button-home{
-        margin-top:30px;
+
+    .admin-button-home {
+        margin-top: 30px;
     }
 }
