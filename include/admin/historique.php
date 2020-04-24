@@ -1,6 +1,13 @@
-<h1>Historique</h1>
+<h2>Historique</h2>
 
 
+<form id="search-form">
+
+    <div class="search-bar">
+        <input type="text" placeholder="Rechercher">
+    </div>
+
+</form>
 
 <table id="historique" style="margin-top:2em;">
 

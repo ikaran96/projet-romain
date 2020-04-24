@@ -1,4 +1,114 @@
-<h1>Articles</h1>
+<div id="admin-art-list">
 
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium alias consequatur fugit rem tempora culpa laboriosam est iure error facilis quasi rerum itaque distinctio, incidunt id doloremque expedita aperiam aspernatur quis qui quos, eum dolorum voluptatem. Nesciunt distinctio aliquid quidem dolore nulla, incidunt non a cum inventore maxime eius ea reprehenderit laudantium! Quo doloribus mollitia quis amet voluptates a autem sit. Cupiditate distinctio, veritatis voluptate magni officiis suscipit! Numquam natus architecto aliquid non voluptatibus alias porro, veniam explicabo ea sunt distinctio blanditiis laboriosam cupiditate facilis asperiores perferendis sed rerum a. Aut numquam modi maxime, necessitatibus exercitationem qui harum ipsa. Rerum iste modi quae explicabo cum. Delectus, iure officiis. Error, numquam! Architecto quia hic deserunt, earum nam libero ex, explicabo animi laboriosam distinctio officia autem! Ullam unde voluptate a assumenda veritatis ipsam id eum dolorem ad at distinctio temporibus dignissimos aspernatur quisquam asperiores est, tempore labore repellendus quaerat. Maiores tempore autem praesentium labore quasi, non suscipit perspiciatis, magni sequi, aut voluptates eius quo? Non fugit cum tenetur, eveniet corrupti nam, id ex nisi commodi doloribus ad et mollitia vel, ullam ipsum. Temporibus consectetur dolor sequi qui deserunt? Labore obcaecati repellat soluta quia laudantium aliquam cum tempora distinctio, minima, recusandae repudiandae atque tenetur, fugit facilis voluptatum assumenda cupiditate perspiciatis rem! Corrupti quasi consequatur consectetur voluptas sint odit laborum nobis error tempora atque repellendus eos quae voluptate veniam, sequi est exercitationem id eius possimus tempore? Fuga nemo cupiditate aperiam quos modi, tempora odit similique, voluptas eum dolores at accusamus libero. Vel omnis eveniet maiores, molestiae eaque esse blanditiis voluptatibus iure asperiores quam aspernatur quis! Ex dignissimos quasi, reprehenderit error deserunt eaque magnam ullam delectus ea odio voluptate perspiciatis quaerat quam alias doloremque officia impedit adipisci voluptatem. Dolor debitis ea id accusamus similique eligendi reprehenderit voluptatem incidunt tempora officiis voluptas nobis iste rerum ullam autem tenetur, doloremque quidem? Cupiditate ad harum commodi eos minima cumque corrupti animi doloremque est eum, odio maiores atque obcaecati sapiente? Eveniet quaerat veritatis odit distinctio architecto repellat hic officia vitae, incidunt cumque, ratione saepe reprehenderit nobis! Rerum dolore excepturi iste minima quisquam. Facere quasi commodi maxime molestias accusamus ad minima quod, tempora asperiores nesciunt omnis dolorem? Deleniti iure sapiente recusandae excepturi architecto enim iste id saepe itaque alias ipsum possimus sunt nulla qui corrupti nam et assumenda, voluptate soluta? Nulla, placeat. Blanditiis nam architecto tenetur nulla minima voluptatem veritatis, labore consequuntur corporis ipsam quasi soluta mollitia voluptatum officiis harum magni. Veniam exercitationem quos nemo natus minus dicta dolor consequatur facilis, deserunt suscipit vero quod in accusantium omnis, aperiam necessitatibus, quidem rem eos? Officiis, expedita fugit pariatur blanditiis dolorum nobis sint ullam temporibus, nihil obcaecati unde porro iure. Libero non repellat facilis, natus ullam itaque quae voluptatum? Voluptatem unde quas labore minus ut, ab voluptas repellendus earum sapiente modi deserunt aspernatur impedit consectetur voluptate sint eligendi quidem iusto neque quaerat perspiciatis optio! Cupiditate rerum iste cumque dolore sit dolores modi sequi repudiandae doloremque neque. Mollitia incidunt in autem possimus voluptatem magni, deleniti quaerat asperiores eum doloremque, porro quos non libero?
-</p>
+    <div class="admin-art-list-title">
+
+        <div class="title">
+            <img src="assests\logo\newspaper.svg" alt="">
+            <h2>Gestion des articles</h2>
+        </div>
+
+        <form id="search-form">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher un article">
+            </div>
+
+            <div class="custom-select">
+                <select>
+                    <option value="0">Catégories</option>
+                    <option value="1">Baguette</option>
+                </select>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="admin-table">
+        <table>
+            <thead>
+                <tr class="admin-table-head">
+                    <th class="column1">#Id</th>
+                    <th class="column2">Activation</th>
+                    <th class="column3">Titre</th>
+                    <th class="column4">Crée le</th>
+                    <th class="column5">Crée par</th>
+                    <th class="column6">Catégories</th>
+                    <th class="column7"></th>
+                    <th class="column8"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="column1">#100</td>
+                    <td class="column2">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                    <td class="column3">Titre de l'article</td>
+                    <td class="column4">12/12/2020</td>
+                    <td class="column5">Utilisateur</td>
+                    <td class="column6">Sport;<br>Baguette</td>
+                    <td class="column7"><a>Éditer</a></td>
+                    <td class="column8"><a>Supprimer</a></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td class="column1">#100</td>
+                    <td class="column2">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                    <td class="column3">Titre de l'article</td>
+                    <td class="column4">12/12/2020</td>
+                    <td class="column5">Utilisateur</td>
+                    <td class="column6">Sport;<br>Baguette</td>
+                    <td class="column7"><a>Éditer</a></td>
+                    <td class="column8"><a>Supprimer</a></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td class="column1">#100</td>
+                    <td class="column2">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                    <td class="column3">Titre de l'article</td>
+                    <td class="column4">12/12/2020</td>
+                    <td class="column5">Utilisateur</td>
+                    <td class="column6">Sport;<br>Baguette</td>
+                    <td class="column7"><a>Éditer</a></td>
+                    <td class="column8"><a>Supprimer</a></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td class="column1">#100</td>
+                    <td class="column2">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                    <td class="column3">Titre de l'article</td>
+                    <td class="column4">12/12/2020</td>
+                    <td class="column5">Utilisateur</td>
+                    <td class="column6">Sport;<br>Baguette</td>
+                    <td class="column7"><a>Éditer</a></td>
+                    <td class="column8"><a>Supprimer</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>

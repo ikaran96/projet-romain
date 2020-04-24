@@ -27,6 +27,13 @@
     </li>
 
     <li>
+        <a href="admin.php?p=ajoutarticle">
+            <img src="assests/logo/plus.svg" alt="">
+            <span>Ajout Article</span>
+        </a>
+    </li>
+
+    <li>
         <a href="admin.php?p=historique">
             <img src="assests/logo/book-open.svg" alt="">
             <span>Historique</span>

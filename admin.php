@@ -44,6 +44,8 @@
                         include 'include/admin/home.php'; 
                     } elseif ($_GET['p'] == 'articles') {
                         include 'include/admin/articles.php'; 
+                    } elseif ($_GET['p'] == 'ajoutarticle') {
+                        include 'include/admin/ajoutarticle.php'; 
                     } elseif ($_GET['p'] == 'utilisateurs') {
                         include 'include/admin/utilisateurs.php'; 
                     } elseif ($_GET['p'] == 'historique') {
