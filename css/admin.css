@@ -151,6 +151,15 @@
     border-bottom: 1px solid black;
     padding: 5px 0;
 }
+#historique tr:first-child > td > * {
+    display: inline-block;
+}
+#historique #search-form {
+    float: right;
+}
+#historique .search-bar {
+    margin-right: 0!important;
+}
 #historique .onglet input {
     display: none;
 }
@@ -200,10 +209,17 @@
     -webkit-box-align: center;
             align-items: center;
 }
-#admin-art-list .admin-art-list-title .title img {
-    margin-right: 1em;
+#adminMain .title {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
 }
-h2 {
+#adminMain .title img {
+    margin-right: 1em;
+    height: 25px;
+}
+#adminMain h2 {
     font-size: 1.5em;
     font-family: var(--fontTitleArticle);
     color: var(--colorPrimary);
@@ -212,7 +228,7 @@ h2 {
 #admin-art-list .admin-art-list-title form div {
     margin: 1em 0em;
 }
-#admin-art-list .admin-art-list-title .search-bar input:focus,
+#adminMain .search-bar input:focus,
 #admin-art-list .admin-art-list-title form .custom-select select:focus {
     outline-width: 0px;
 }
@@ -240,7 +256,7 @@ h2 {
     color: var(--colorPrimary);
     width: 0px;
 }
-#admin-art-list .admin-art-list-title .search-bar input {
+#adminMain .search-bar input {
     letter-spacing: 0.02em;
     padding: 0px 10px;
     width: 100%;
@@ -657,7 +673,7 @@ input:checked+.slider:before {
         display: -webkit-box;
         display: flex;
     }
-    #admin-art-list .admin-art-list-title .search-bar {
+    #adminMain .search-bar {
         margin-right: 1em;
         width: 325px;
         display: -webkit-box;
@@ -665,12 +681,12 @@ input:checked+.slider:before {
         -webkit-box-pack: end;
                 justify-content: flex-end;
     }
-    #admin-art-list .admin-art-list-title .search-bar input {
+    #adminMain .search-bar input {
         width: 195px;
         -webkit-transition: width 0.4s ease-out, border-radius 0.3s;
         transition: width 0.4s ease-out, border-radius 0.3s;
     }
-    #admin-art-list .admin-art-list-title .search-bar input:focus {
+    #adminMain .search-bar input:focus {
         width: 100%;
         border-radius: 0px;
     }

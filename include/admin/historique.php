@@ -1,19 +1,15 @@
-<h2>Historique</h2>
+<div class="title">
+    <img src="assests\logo\book-open.svg" alt="">
+    <h2>Historique</h2>
+</div>
 
-
-<form id="search-form">
-
-    <div class="search-bar">
-        <input type="text" placeholder="Rechercher">
-    </div>
-
-</form>
 
 <table id="historique" style="margin-top:2em;">
 
     <tr>
         <td>
-            <form class="onglet" action="admin.php?p=historique" method="GET">
+
+            <form class="onglet" >
                 <input type="radio" name="onglet" id="gen" value="" <?php if($_GET['filter']== NULL){ echo 'checked';}?>>
                 <label for="gen"><span class="btm">Général</span></label>
 
@@ -23,6 +19,13 @@
                 <input type="radio" name="onglet" id="arti" value="3" <?php if($_GET['filter']== 3){ echo 'checked';}?>>
                 <label for="arti"><span class="btm">Articles</span></label>
             </form>
+
+            <form id="search-form">
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher un article">
+                </div>
+            </form>
+
         </td>
     </tr>
 
