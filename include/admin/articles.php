@@ -3,11 +3,19 @@
     <div class="admin-art-list-title">
 
         <div class="title">
+<<<<<<< HEAD
             <img src="assests\logo\Icon awesome-newspaper.svg" alt="">
             <h2>Gestion des articles</h2>
         </div>
 
         <form>
+=======
+            <img src="assests\logo\newspaper.svg" alt="">
+            <h2>Gestion des articles</h2>
+        </div>
+
+        <form id="search-form">
+>>>>>>> 884749720e188e306a907070f9b35fc0977c2eb6
 
             <div class="search-bar">
                 <input type="text" placeholder="Rechercher un article">

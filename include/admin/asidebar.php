@@ -1,7 +1,13 @@
+<div class="avatar">
+    <img src="assests/logo/avatar.png" alt="">
+    <span>Bonjour <strong>Prénom</strong>,</span>
+</div>
+
+
 <ul>
     <li>
         <a href="admin.php">
-            <img src="https://fflose.com/wp-content/uploads/2017/10/Picto-Athletisme.svg" alt="">
+            <img src="assests/logo/home.svg" alt="">
             <span>Accueil</span>
         </a>
     </li>
@@ -17,6 +23,13 @@
         <a href="admin.php?p=articles">
             <img src="assests/logo/newspaper.svg" alt="">
             <span>Articles</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="admin.php?p=ajoutarticle">
+            <img src="assests/logo/plus.svg" alt="">
+            <span>Ajout Article</span>
         </a>
     </li>
 

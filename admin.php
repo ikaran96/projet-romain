@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/admin.css">
 
     <script src="assests/font-awesome/all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <title>Le Bon Sens Français - Admin</title>
 
@@ -43,6 +44,8 @@
                         include 'include/admin/home.php'; 
                     } elseif ($_GET['p'] == 'articles') {
                         include 'include/admin/articles.php'; 
+                    } elseif ($_GET['p'] == 'ajoutarticle') {
+                        include 'include/admin/ajoutarticle.php'; 
                     } elseif ($_GET['p'] == 'utilisateurs') {
                         include 'include/admin/utilisateurs.php'; 
                     } elseif ($_GET['p'] == 'historique') {
@@ -60,5 +63,7 @@
     <script src="assests/functions/nav.js"></script>
 
 </body>
+
+
 
 </html>
