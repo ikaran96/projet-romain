@@ -18,9 +18,9 @@
                 <span class="small">*Le pseudo doit contenir max 14 caractères, symbole interdit sauf - et _</span>
             </p>
             <p class="formulaire-middle">
-                <label class="label-formulaire-contact" placeholder="Minimum 6 caractères" for="pass">Mot de passe*</label> <br>
+                <label class="label-formulaire-contact" for="pass">Mot de passe*</label> <br>
                 <input id="pass" nom="pass" class="input-formulaire-contact" type="password" placeholder="Minimum 6 caractères"><br>
-                <span class="small">*Le mot de passe doit contenir une minuscule, une majuscule et un chiffre</span>
+                <span class="small">*Le mot de passe doit contenir une minuscule, une majuscule, un chiffre et minimum 6 caractères</span>
             </p>
             <button class="button-formulaire-contact" type="submit" name="button-contact">SE CONNECTER</button>
         </form>
