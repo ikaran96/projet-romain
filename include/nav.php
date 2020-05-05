@@ -7,7 +7,7 @@
     <div id="header">
 
         <div class="shopping">
-            <a href=""><i class="fas fa-shopping-bag"></i></a>
+            <a href="index.php?p=connection"><i class="fas fa-user-astronaut"></i></a>
         </div>
 
         <div class="center">

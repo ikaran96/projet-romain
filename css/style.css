@@ -627,7 +627,9 @@ main .top-card-text .top-card-title,
     border-radius:7px;
     width:100%;
     height:40px;
-    margin-top:5px;    
+    margin-top:5px;
+    font-size: 1em;
+    padding: 0em 0.5em;    
 }
 #contact-faq .textarea-formulaire-contact{
     border: 2px solid var(--colorBgLight);
@@ -668,8 +670,11 @@ main .top-card-text .top-card-title,
     box-shadow: -5px 6px 8px lightgrey;
 }
 
-
-
+#contact-faq .small {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--colorPrimary);
+}
 
 /* NAV JS */
 /* The Overlay (background) */

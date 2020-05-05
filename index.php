@@ -35,6 +35,10 @@
                 include 'include/main/article.php'; 
             } elseif ($_GET['p'] == 'contact') {
                 include 'include/main/contact.php'; 
+            } elseif ($_GET['p'] == 'connection') {
+                include 'include/main/connection.php'; 
+            } elseif ($_GET['p'] == 'inscription') {
+                include 'include/main/inscription.php'; 
             } else {
                 include 'include/main/home.php';
             }
