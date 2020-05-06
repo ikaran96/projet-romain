@@ -7,11 +7,7 @@
     <div id="header">
 
         <div class="shopping">
-<<<<<<< HEAD
-            <a href="index.php?p=connection"><i class="fas fa-user-astronaut"></i></a>
-=======
             <a href="?controller=user&task=showConnexion"><i class="fas fa-user-astronaut"></i></a>
->>>>>>> 0e83fc00db684526830475f8ee85f5bfcb0f3e9b
         </div>
 
         <div class="center">
