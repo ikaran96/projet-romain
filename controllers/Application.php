@@ -25,28 +25,4 @@ class Application
         $controller->$taskName();
 
     }
-
-
-    public static function user() 
-    {
-        $controllerName = "User";
-        $taskName = "showConnexion";
-
-        if (!empty($_GET['controller'])) 
-        {
-            $controllerName = ucfirst($_GET['controller']);
-        }
-        if (!empty($_GET['task'])) 
-        {
-            $taskName = $_GET['task'];
-        }
-
-        $controllerName =  $controllerName."C";
-
-        $controller = new $controllerName;
-        $controller->$taskName();
-
-    }
-
-
 }
