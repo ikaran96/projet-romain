@@ -1,6 +1,6 @@
 <main id="article">
 
-<?php foreach ( $articles as $article )?>
+<?php foreach ( $articles as $article ) { ?>
 
     <div class="card-article">
 
