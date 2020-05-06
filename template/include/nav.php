@@ -11,7 +11,7 @@
         </div>
 
         <div class="center">
-            <a href="index.php"><img src="assests/logo/logo1.png" alt=""></a>
+            <a href="index.php"><img src="template/assests/logo/logo1.png" alt=""></a>
         </div>
 
         <div class="menu">
@@ -21,7 +21,7 @@
                 </li>
 
                 <li>
-                    <a href="index.php?p=top"> <i class="fas fa-trophy"></i><span>Tops lose</span></a>
+                    <a href="?controller=article&task=showTop"> <i class="fas fa-trophy"></i><span>Tops lose</span></a>
                 </li>
 
                 <li>

@@ -9,7 +9,7 @@
         <p class="date-from date-art">2 mois</p>
 
         <div class="top-card-img img-art" href="top-article.php">
-            <img src="assests\img\best-of-humour-ffl-sportifs.png" alt="">
+            <img src="template/assests\img\best-of-humour-ffl-sportifs.png" alt="">
         </div>
 
         <p class="intro">
@@ -52,7 +52,7 @@
                 <div class="icon"><i class="fas fa-futbol"></i></div>
             </a>
             <a class="top-card-img" href="top-article.php">
-                <img src="assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
+                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
             </a>
 
         </div>
@@ -82,7 +82,7 @@
                 <div class="icon"><i class="fas fa-futbol"></i></div>
             </a>
             <a class="top-card-img" href="top-article.php">
-                <img src="assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
+                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
             </a>
 
         </div>
@@ -112,7 +112,7 @@
                 <div class="icon"><i class="fas fa-futbol"></i></div>
             </a>
             <a class="top-card-img" href="top-article.php">
-                <img src="assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
+                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
             </a>
 
         </div>
@@ -142,7 +142,7 @@
                 <div class="icon"><i class="fas fa-futbol"></i></div>
             </a>
             <a class="top-card-img" href="top-article.php">
-                <img src="assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
+                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
             </a>
 
         </div>
@@ -172,7 +172,7 @@
                 <div class="icon"><i class="fas fa-futbol"></i></div>
             </a>
             <a class="top-card-img" href="top-article.php">
-                <img src="assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
+                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
             </a>
 
         </div>
@@ -202,7 +202,7 @@
                 <div class="icon"><i class="fas fa-futbol"></i></div>
             </a>
             <a class="top-card-img" href="top-article.php">
-                <img src="assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
+                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
             </a>
 
         </div>
@@ -232,7 +232,7 @@
                 <div class="icon"><i class="fas fa-futbol"></i></div>
             </a>
             <a class="top-card-img" href="top-article.php">
-                <img src="assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
+                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
             </a>
 
         </div>
@@ -262,7 +262,7 @@
                 <div class="icon"><i class="fas fa-futbol"></i></div>
             </a>
             <a class="top-card-img" href="top-article.php">
-                <img src="assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
+                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
             </a>
 
         </div>
@@ -292,7 +292,7 @@
                 <div class="icon"><i class="fas fa-futbol"></i></div>
             </a>
             <a class="top-card-img" href="top-article.php">
-                <img src="assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
+                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
             </a>
 
         </div>
