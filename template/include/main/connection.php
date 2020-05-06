@@ -19,7 +19,11 @@
             <button class="button-formulaire-contact" type="submit" name="button-contact">SE CONNECTER</button>
         </form>
 
+<<<<<<< HEAD
         <p><a href="index.php?p=inscription" class="small">Vous n'êtes pas encore inscrit ? C'est par ici</a></p>
+=======
+        <p><a href="?controller=user&task=showInscription" class="small">Vous n'êtes pas encore inscrit ? C'est par ici</a></p>
+>>>>>>> 0e83fc00db684526830475f8ee85f5bfcb0f3e9b
 
     </div>
 </main>
