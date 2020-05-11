@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="template/css/reset.css">
     <link rel="stylesheet" href="template/css/var.css">
     <link rel="stylesheet" href="template/css/style.css">
+    <link rel="stylesheet" href="template/css/article.css">
 
     <script src="template/assests/font-awesome/all.min.js"></script>
 

@@ -24,7 +24,7 @@ abstract class Model extends Database {
     {
         $sql = "SELECT * 
                 FROM {$this->_table} 
-                WHERE {$filter}_{$this->_table} = :id";
+                WHERE {$filter} = :id";
         $req = $this->_pdo->prepare($sql);
         $req->execute(compact('id'));
         $item = $req->fetch();

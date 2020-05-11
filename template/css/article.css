@@ -1,0 +1,13 @@
+.alert-comment {
+    padding: 2em;
+    background-color: hsla(206, 30%, 86%, 1);
+    border-radius: 5px;
+    margin: 2em 0;
+    letter-spacing: 0.02em;
+}
+
+.alert-comment a {
+    color: black;
+    font-weight: 500;
+    margin-right: 0.15em;
+}
