@@ -4,29 +4,22 @@
 
     <article class="article">
 
-        <h3 class="top-art-title title-art">Top 10 des réponses des sportifs français à la FFL</h3>
+        <h3 class="top-art-title title-art"><?=$article['nom_article']?></h3>
 
-        <p class="date-from date-art">2 mois</p>
+        <p class="date-from date-art"><?=$article['dateparution_article']?></p>
 
         <div class="top-card-img img-art" href="top-article.php">
-            <img src="template/assests\img\best-of-humour-ffl-sportifs.png" alt="">
+            <img src="<?=$article['image_article']?>" alt="<?=$article['nom_article']?>">
         </div>
 
         <p class="intro">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsam at consequatur tenetur
-            accusamus tempore ut, similique necessitatibus, cupiditate minus nulla reprehenderit, veritatis
-            eaque vitae quae error iure. Perferendis, illo.
+            
         </p>
 
         <h4>Lorem ipsum dolor sit amet</h4>
 
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quisquam cum nostrum ea
-            perspiciatis facilis nam hic id animi quis laudantium est distinctio inventore vel harum culpa,
-            expedita eligendi nobis.Perspiciatis modi magnam quia. Temporibus, voluptates! Voluptate saepe
-            voluptatem molestiae pariatur id cum, quisquam similique assumenda? Perferendis cupiditate
-            consequuntur, dolores blanditiis ipsam omnis sapiente necessitatibus? Dolores necessitatibus dolorum
-            sint id!
+            <?=$article['texte_article']?>
         </p>
 
         <div class="similar-content">

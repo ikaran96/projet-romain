@@ -8,7 +8,6 @@ abstract class Model extends Database {
     protected $_table;
 
 
-
     public function findAll() 
     {
         $sql = "SELECT * 
@@ -20,14 +19,18 @@ abstract class Model extends Database {
         return $items;
     }
 
-    public function findBy($filter, $id) 
+    public function findBy($filter, $id, $multi = false) 
     {
         $sql = "SELECT * 
                 FROM {$this->_table} 
-                WHERE {$filter}_{$this->_table} = :id";
+                WHERE {$filter} = :id";
         $req = $this->_pdo->prepare($sql);
         $req->execute(compact('id'));
-        $item = $req->fetch();
+        if ($multi) {
+            $item = $req->fetchAll();
+        } else {
+            $item = $req->fetch();
+        }
         $req->closeCursor();
         return $item;
     }
@@ -36,7 +39,7 @@ abstract class Model extends Database {
     {
         $sql = "DELETE  
                 FROM {$this->_table} 
-                WHERE {$filter}_{$this->_table} = :id";
+                WHERE {$filter} = :id";
         $req = $this->_pdo->prepare($sql);
         $req->execute(compact('id'));
         $req->closeCursor();
@@ -50,7 +53,7 @@ abstract class Model extends Database {
             $sql .= ' '.$k.' = "'.$v.'" ,'; 
         }
         $sql = substr($sql,0,-1);
-        $sql .= " WHERE {$filter}_{$this->_table} = :id ";
+        $sql .= " WHERE {$filter} = :id ";
         $req = $this->_pdo->prepare($sql);
         $req->execute(compact('id'));
         $req->closeCursor();
