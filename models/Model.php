@@ -8,6 +8,7 @@ abstract class Model extends Database {
     protected $_table;
 
 
+
     public function findAll() 
     {
         $sql = "SELECT * 

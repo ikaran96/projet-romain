@@ -1,6 +1,6 @@
 <?php
 
-require_once('./models/Article.php');
+require_once('./models/ArticleM.php');
 require_once("Renderer.php");
 
 class ArticleC {
@@ -9,14 +9,14 @@ class ArticleC {
 
     public function __construct()
     {
-        $this->ArticleM = new Article;
+        $this->ArticleM = new ArticleM;
     }
 
 
         public function showAll()
         {
 
-            $articles = $this->ArticleM->findAll();
+            //$articles = $this->ArticleM->findAll();
 
             $pageTitle = 'Accueil';
             Renderer::render('home', compact('pageTitle', 'articles'));

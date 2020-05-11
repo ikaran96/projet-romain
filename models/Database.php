@@ -9,9 +9,9 @@ abstract class Database {
 
         try {
             // Chris : Local
-            // $bdd = "mysql:host=localhost:3306;dbname=test";
-            // $user = "root";
-            // $pass = "rootroot";
+            $bdd = "mysql:host=localhost:3306;dbname=test";
+            $user = "root";
+            $pass = "rootroot";
 
             // Chris : Online
             // $bdd = "mysql:host=db5000303652.hosting-data.io;dbname=dbs296639";
