@@ -53,21 +53,22 @@
         <div class="comments">
             <!-- comment -->
             <?php foreach ($commentaires as $comment) : ?>
-                <div>
-                    <div class="">
-                        <img class="" src="" alt="">
+                <div class="user-comment">
+                    <div class="user-portrait">
+                        <!-- <img class="" src="" alt=""> -->
+                        
                     </div>
-                    <div class="">
-                        <div class="">
-                            <h4>Variable Nom Prenom User</h4>
+                    <div>
+                        <div class="comment-header">
+                            <h4>BDD Variable Nom Prenom User</h4>
                             <span class="time"><?= strftime('%d %b. %Y, %R', strtotime($comment['date_commentaire'])) ?></span>
                             <!-- php if connected -->
-                            <a href="" class="reply archive">Archiver</a>
-                            <a href="" class="reply delete">Supprimer</a>
                             <!-- /php if connected -->
                         </div>
                         <p><?= $comment['contenu_commentaire'] ?>
-                        </p>
+                    </p>
+                    <button class="comment-btn archive" type="submit">Archiver</button>
+                    <button class="comment-btn delete" type="submit">Supprimer</button>
                     </div>
                 </div>
             <?php endforeach ?>
