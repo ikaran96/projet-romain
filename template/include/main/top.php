@@ -1,7 +1,9 @@
 <div class="bar">
 
     <h2><?=$articles[0]["nom_categorie"]?></h2>
-    <div class="icon"><img class="logo" src="template/assests/logo/<?=$articles[0]['nom_categorie']?>.svg" alt="<?=$articles[0]['nom_categorie']?>"></div>
+    <div class="icon">
+        <img class="logo" src="template/assests/logo/<?=$articles[0]['nom_categorie']?>.svg" alt="<?=$articles[0]['nom_categorie']?>">
+    </div>
 
 </div>
 
@@ -17,7 +19,7 @@
 
         <div class="top-card-text">
 
-            <a class="tag-word" href="">
+            <a class="tag-word" href="?controller=article&task=showCa&id=<?=$article['id_categorie']?>">
                 <?=$article["nom_categorie"]?>
             </a>
 

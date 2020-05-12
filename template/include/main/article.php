@@ -46,10 +46,12 @@
 
             <div class="minicard-img">
 
-                <a href="http://">
-                    <div class="icon"><i class="fas fa-futbol"></i></div>
+                <a href="?controller=article&task=showCa&id=<?=$mini['id_categorie']?>">
+                    <div class="icon">
+                        <img class="logo" src="template/assests/logo/<?=$mini['nom_categorie']?>.svg" alt="<?=$mini['nom_categorie']?>">
+                    </div>
                 </a>
-                <a class="top-card-img" href="top-article.php">
+                <a class="top-card-img" href="index.php?controller=article&task=show&id=<?=$mini['id_articlenum']?>">
                     <img src="<?=$mini['image_article']?>" alt="<?=$mini['nom_article']?>">
                 </a>
 
@@ -58,7 +60,7 @@
             <div class="top-card-text">
 
                 <div class="minicard-tag">
-                    <a class="tag-word" href="">Football</a>
+                    <a class="tag-word" href="?controller=article&task=showCa&id=<?=$mini['id_categorie']?>"><?=$mini['nom_categorie']?></a>
                 </div>
 
                 <h3>
