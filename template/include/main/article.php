@@ -36,13 +36,24 @@
     </article>
 
 
-
+    <!-- invite de connection si pas de session -->
     <?php if (!isset($_SESSION['type'])) : ?>
         <div class="alert-comment">
             <p class=""><a href="index.php?action=connection">Connectez-vous</a> pour laisser
                 un commentaire !</p>
         </div>
     <?php endif ?>
+    <!-- >invite de connection si pas de session -->
+
+    <!-- insertion de commentaire -->
+    <div class="submit-comment">
+        <h3>Écrire un commentaire</h3>
+        <form action="">
+            <textarea name="" id="" rows="8"></textarea>
+            <button class="comment-btn envoyer" type="submit">Envoyer</button>
+        </form>
+    </div>
+    <!-- /insertion de commentaire -->
 
     <!-- comments -->
     <div id="comments">
@@ -56,7 +67,7 @@
                 <div class="user-comment">
                     <div class="user-portrait">
                         <!-- <img class="" src="" alt=""> -->
-                        
+
                     </div>
                     <div>
                         <div class="comment-header">
@@ -66,9 +77,9 @@
                             <!-- /php if connected -->
                         </div>
                         <p><?= $comment['contenu_commentaire'] ?>
-                    </p>
-                    <button class="comment-btn archive" type="submit">Archiver</button>
-                    <button class="comment-btn delete" type="submit">Supprimer</button>
+                        </p>
+                        <button class="comment-btn archive" type="submit">Archiver</button>
+                        <button class="comment-btn delete" type="submit">Supprimer</button>
                     </div>
                 </div>
             <?php endforeach ?>
