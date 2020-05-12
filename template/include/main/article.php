@@ -48,8 +48,8 @@
     <!-- insertion de commentaire -->
     <div class="submit-comment">
         <h3>Écrire un commentaire</h3>
-        <form action="">
-            <textarea name="" id="" rows="8"></textarea>
+        <form action="index.php?controller=article&task=insertComment&id=1">
+            <textarea name="comment" id="" rows="8"></textarea>
             <button class="comment-btn envoyer" type="submit">Envoyer</button>
         </form>
     </div>

@@ -40,4 +40,15 @@ class ArticleC
         $totalComments = count($commentaires);
         Renderer::render('article', compact('pageTitle', 'commentaires', 'totalComments'));
     }
+
+    public function insertComment() {
+        $id_articlenum = htmlentities($_GET['id']);
+        var_dump($id_articlenum); exit;
+        $newComment = $this->CommentaireM->insertComment($id_articlenum);
+        if ($newComment) {
+            header('location:index.php?action=post&id=' . $id_articlenum);
+        } else {
+            throw new Exception("L'ajout de votre commentaire a échoué");
+        }
+    }
 }
