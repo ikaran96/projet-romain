@@ -21,7 +21,7 @@
                 </li>
 
                 <li>
-                    <a href="?controller=article&task=showTop"> <i class="fas fa-trophy"></i><span>Tops lose</span></a>
+                    <a href="?controller=article&task=showCa&id=2"> <i class="fas fa-trophy"></i><span>Tops lose</span></a>
                 </li>
 
                 <li>

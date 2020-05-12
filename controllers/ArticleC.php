@@ -16,27 +16,31 @@ class ArticleC {
         public function showAll()
         {
 
-            $articles = $this->ArticleM->findAll();
+            $articles = $this->ArticleM->findAll(['T_categorie' => 'id_categorie']);
 
             $pageTitle = 'Accueil';
             Renderer::render('home', compact('pageTitle', 'articles'));
         }
 
-        public function showTop()
+        public function showCa()
         {
-            $articles = $this->ArticleM->findBy('id_categorie', 2, true);
+            $id_categorie = htmlentities($_GET["id"]);
+            $articles = $this->ArticleM->findBy('T_Article.id_categorie', $id_categorie, true, ['T_categorie' => 'id_categorie']);
 
-            $pageTitle = 'Top';
+            $pageTitle = $articles[0]["nom_categorie"];
             Renderer::render('top', compact('pageTitle', 'articles'));
         }
 
         public function show()
         {
             $id_article = htmlentities($_GET["id"]);
-            $article = $this->ArticleM->findBy('id_articlenum', $id_article);
+            $article = $this->ArticleM->findBy('id_articlenum', $id_article, false, ['T_categorie' => 'id_categorie']);
+            $minis = $this->ArticleM->findBy('T_Article.id_categorie', $article["id_categorie"], true, ['T_categorie' => 'id_categorie']);
 
             $pageTitle = $article["nom_article"];
-            Renderer::render('article', compact('pageTitle', 'article'));
+            Renderer::render('article', compact('pageTitle', 'article', 'minis'));
         }
+
+
 
 }

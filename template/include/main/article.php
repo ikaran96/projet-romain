@@ -1,6 +1,8 @@
 <main>
 
-    <a class="tag-word tag-art" href="">Autres</a>
+    <a class="tag-word tag-art" href="?controller=article&task=showCa&id=<?=$article['id_categorie']?>">
+        <?=$article['nom_categorie']?>
+    </a>
 
     <article class="article">
 
@@ -37,279 +39,41 @@
 
     <h3 class="title-minicard">Les derniers articles</h3>
 
-    <div class="minicard">
 
-        <div class="minicard-img">
+    <?php foreach ( $minis as $mini ) { ?>
 
-            <a href="http://">
-                <div class="icon"><i class="fas fa-futbol"></i></div>
-            </a>
-            <a class="top-card-img" href="top-article.php">
-                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
-            </a>
+        <div class="minicard">
 
-        </div>
+            <div class="minicard-img">
 
-        <div class="top-card-text">
+                <a href="http://">
+                    <div class="icon"><i class="fas fa-futbol"></i></div>
+                </a>
+                <a class="top-card-img" href="top-article.php">
+                    <img src="<?=$mini['image_article']?>" alt="<?=$mini['nom_article']?>">
+                </a>
 
-            <div class="minicard-tag">
-                <a class="tag-word" href="">Football</a>
-                <a class="tag-word" href="">Quizz</a>
             </div>
 
-            <h3>
-                <a class="top-card-title" href="top-article">Top 10 des réponses des sportifs français à la
-                    FFL</a>
-            </h3>
-            <p class="date-from">2 mois</p>
+            <div class="top-card-text">
 
-        </div>
+                <div class="minicard-tag">
+                    <a class="tag-word" href="">Football</a>
+                </div>
 
-    </div>
+                <h3>
+                    <a class="top-card-title" href="index.php?controller=article&task=show&id=<?=$mini['id_articlenum']?>">
+                        <?=$mini['nom_article']?>
+                    </a>
+                </h3>
 
-    <div class="minicard">
+                <p class="date-from"><?=$mini['dateparution_article']?></p>
 
-        <div class="minicard-img">
-
-            <a href="http://">
-                <div class="icon"><i class="fas fa-futbol"></i></div>
-            </a>
-            <a class="top-card-img" href="top-article.php">
-                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
-            </a>
-
-        </div>
-
-        <div class="top-card-text">
-
-            <div class="minicard-tag">
-                <a class="tag-word" href="">Football</a>
-                <a class="tag-word" href="">Quizz</a>
             </div>
 
-            <h3>
-                <a class="top-card-title" href="top-article">Top 10 des réponses des sportifs français à la
-                    FFL</a>
-            </h3>
-            <p class="date-from">2 mois</p>
-
         </div>
 
-    </div>
-
-    <div class="minicard">
-
-        <div class="minicard-img">
-
-            <a href="http://">
-                <div class="icon"><i class="fas fa-futbol"></i></div>
-            </a>
-            <a class="top-card-img" href="top-article.php">
-                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
-            </a>
-
-        </div>
-
-        <div class="top-card-text">
-
-            <div class="minicard-tag">
-                <a class="tag-word" href="">Football</a>
-                <a class="tag-word" href="">Quizz</a>
-            </div>
-
-            <h3>
-                <a class="top-card-title" href="top-article">Top 10 des réponses des sportifs français à la
-                    FFL</a>
-            </h3>
-            <p class="date-from">2 mois</p>
-
-        </div>
-
-    </div>
-
-    <div class="minicard">
-
-        <div class="minicard-img">
-
-            <a href="http://">
-                <div class="icon"><i class="fas fa-futbol"></i></div>
-            </a>
-            <a class="top-card-img" href="top-article.php">
-                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
-            </a>
-
-        </div>
-
-        <div class="top-card-text">
-
-            <div class="minicard-tag">
-                <a class="tag-word" href="">Football</a>
-                <a class="tag-word" href="">Quizz</a>
-            </div>
-
-            <h3>
-                <a class="top-card-title" href="top-article">Top 10 des réponses des sportifs français à la
-                    FFL</a>
-            </h3>
-            <p class="date-from">2 mois</p>
-
-        </div>
-
-    </div>
-
-    <div class="minicard">
-
-        <div class="minicard-img">
-
-            <a href="http://">
-                <div class="icon"><i class="fas fa-futbol"></i></div>
-            </a>
-            <a class="top-card-img" href="top-article.php">
-                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
-            </a>
-
-        </div>
-
-        <div class="top-card-text">
-
-            <div class="minicard-tag">
-                <a class="tag-word" href="">Football</a>
-                <a class="tag-word" href="">Quizz</a>
-            </div>
-
-            <h3>
-                <a class="top-card-title" href="top-article">Top 10 des réponses des sportifs français à la
-                    FFL</a>
-            </h3>
-            <p class="date-from">2 mois</p>
-
-        </div>
-
-    </div>
-
-    <div class="minicard">
-
-        <div class="minicard-img">
-
-            <a href="http://">
-                <div class="icon"><i class="fas fa-futbol"></i></div>
-            </a>
-            <a class="top-card-img" href="top-article.php">
-                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
-            </a>
-
-        </div>
-
-        <div class="top-card-text">
-
-            <div class="minicard-tag">
-                <a class="tag-word" href="">Football</a>
-                <a class="tag-word" href="">Quizz</a>
-            </div>
-
-            <h3>
-                <a class="top-card-title" href="top-article">Top 10 des réponses des sportifs français à la
-                    FFL</a>
-            </h3>
-            <p class="date-from">2 mois</p>
-
-        </div>
-
-    </div>
-
-    <div class="minicard">
-
-        <div class="minicard-img">
-
-            <a href="http://">
-                <div class="icon"><i class="fas fa-futbol"></i></div>
-            </a>
-            <a class="top-card-img" href="top-article.php">
-                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
-            </a>
-
-        </div>
-
-        <div class="top-card-text">
-
-            <div class="minicard-tag">
-                <a class="tag-word" href="">Football</a>
-                <a class="tag-word" href="">Quizz</a>
-            </div>
-
-            <h3>
-                <a class="top-card-title" href="top-article">Top 10 des réponses des sportifs français à la
-                    FFL</a>
-            </h3>
-            <p class="date-from">2 mois</p>
-
-        </div>
-
-    </div>
-
-    <div class="minicard">
-
-        <div class="minicard-img">
-
-            <a href="http://">
-                <div class="icon"><i class="fas fa-futbol"></i></div>
-            </a>
-            <a class="top-card-img" href="top-article.php">
-                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
-            </a>
-
-        </div>
-
-        <div class="top-card-text">
-
-            <div class="minicard-tag">
-                <a class="tag-word" href="">Football</a>
-                <a class="tag-word" href="">Quizz</a>
-            </div>
-
-            <h3>
-                <a class="top-card-title" href="top-article">Top 10 des réponses des sportifs français à la
-                    FFL</a>
-            </h3>
-            <p class="date-from">2 mois</p>
-
-        </div>
-
-    </div>
-
-    <div class="minicard">
-
-        <div class="minicard-img">
-
-            <a href="http://">
-                <div class="icon"><i class="fas fa-futbol"></i></div>
-            </a>
-            <a class="top-card-img" href="top-article.php">
-                <img src="template/assests\img\voici-les-20-clubs-de-football-les-plus-riches-du-monde.jpg" alt="">
-            </a>
-
-        </div>
-
-        <div class="top-card-text">
-
-            <div class="minicard-tag">
-                <a class="tag-word" href="">Football</a>
-                <a class="tag-word" href="">Quizz</a>
-            </div>
-
-            <h3>
-                <a class="top-card-title" href="top-article">Top 10 des réponses des sportifs français à la
-                    FFL</a>
-            </h3>
-            <p class="date-from">2 mois</p>
-
-        </div>
-
-    </div>
-
-</div>
-
-
+    <?php } ?>
 
 
 </main>

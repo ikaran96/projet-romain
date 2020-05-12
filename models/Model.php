@@ -8,10 +8,14 @@ abstract class Model extends Database {
     protected $_table;
 
 
-    public function findAll() 
+    public function findAll($joins= []) 
     {
         $sql = "SELECT * 
                 FROM {$this->_table}";
+        if (!empty($joins)) {
+            foreach($joins as $table=>$col)
+            $sql .= " LEFT JOIN {$table} ON {$this->_table}.{$col} = {$table}.{$col} ";
+        }
         $req = $this->_pdo->prepare($sql);
         $req->execute();
         $items = $req->fetchAll();
@@ -19,11 +23,15 @@ abstract class Model extends Database {
         return $items;
     }
 
-    public function findBy($filter, $id, $multi = false) 
+    public function findBy($filter, $id, $multi = false, $joins= []) 
     {
         $sql = "SELECT * 
-                FROM {$this->_table} 
-                WHERE {$filter} = :id";
+                FROM {$this->_table}";
+        if (!empty($joins)) {
+            foreach($joins as $table=>$col)
+            $sql .= " LEFT JOIN {$table} ON {$this->_table}.{$col} = {$table}.{$col} ";
+        }
+        $sql .= " WHERE {$filter} = :id ";
         $req = $this->_pdo->prepare($sql);
         $req->execute(compact('id'));
         if ($multi) {

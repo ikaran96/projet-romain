@@ -1,7 +1,7 @@
 <div class="bar">
 
-    <h2>Tops</h2>
-    <div class="icon"><i class="fas fa-crown"></i></div>
+    <h2><?=$articles[0]["nom_categorie"]?></h2>
+    <div class="icon"><img class="logo" src="template/assests/logo/<?=$articles[0]['nom_categorie']?>.svg" alt="<?=$articles[0]['nom_categorie']?>"></div>
 
 </div>
 
@@ -17,10 +17,16 @@
 
         <div class="top-card-text">
 
-            <a class="tag-word" href="">Autres</a>
+            <a class="tag-word" href="">
+                <?=$article["nom_categorie"]?>
+            </a>
+
             <h3>
-                <a class="top-card-title" href="top-article.php"><?=$article['nom_article']?></a>
+                <a class="top-card-title" href="index.php?controller=article&task=show&id=<?=$article['id_articlenum']?>">
+                    <?=$article['nom_article']?>
+                </a>
             </h3>
+
             <p class="excerpt"><?=substr($article['texte_article'], 0, 200)?>...</p>
             <p class="date-from"><?=$article['dateparution_article']?></p>
 

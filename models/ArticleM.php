@@ -6,7 +6,6 @@ class ArticleM extends Model {
 
 
     public $_table = "T_Article";
-    
 
 
 
