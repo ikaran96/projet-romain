@@ -48,8 +48,8 @@
     <!-- insertion de commentaire -->
     <div class="submit-comment">
         <h3>Écrire un commentaire</h3>
-        <form action="index.php?controller=article&task=insertComment&id=1">
-            <textarea name="comment" id="" rows="8"></textarea>
+        <form action="index.php?controller=article&task=insertComment&id=1" method="POST">
+            <textarea name="comment" rows="8"></textarea>
             <button class="comment-btn envoyer" type="submit">Envoyer</button>
         </form>
     </div>
@@ -73,13 +73,13 @@
                         <div class="comment-header">
                             <h4>BDD Variable Nom Prenom User</h4>
                             <span class="time"><?= strftime('%d %b. %Y, %R', strtotime($comment['date_commentaire'])) ?></span>
-                            <!-- php if connected -->
-                            <!-- /php if connected -->
                         </div>
                         <p><?= $comment['contenu_commentaire'] ?>
                         </p>
-                        <button class="comment-btn archive" type="submit">Archiver</button>
+                        <!-- php if connected -->
+                        <button class="comment-btn archive" type="submit">Modifier</button>
                         <button class="comment-btn delete" type="submit">Supprimer</button>
+                        <!-- /php if connected -->
                     </div>
                 </div>
             <?php endforeach ?>

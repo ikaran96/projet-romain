@@ -43,10 +43,9 @@ class ArticleC
 
     public function insertComment() {
         $id_articlenum = htmlentities($_GET['id']);
-        var_dump($id_articlenum); exit;
         $newComment = $this->CommentaireM->insertComment($id_articlenum);
         if ($newComment) {
-            header('location:index.php?action=post&id=' . $id_articlenum);
+            header('location:index.php');
         } else {
             throw new Exception("L'ajout de votre commentaire a échoué");
         }
