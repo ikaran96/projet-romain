@@ -15,8 +15,9 @@ class ArticleC {
 
         public function showAll()
         {
-
             $articles = $this->ArticleM->findAll(['T_categorie' => 'id_categorie']);
+
+            $articles = array_reverse($articles);
 
             $pageTitle = 'Accueil';
             Renderer::render('home', compact('pageTitle', 'articles'));
@@ -33,12 +34,16 @@ class ArticleC {
 
         public function show()
         {
-            $id_article = htmlentities($_GET["id"]);
-            $article = $this->ArticleM->findBy('id_articlenum', $id_article, false, ['T_categorie' => 'id_categorie']);
+            $id_articlenum = htmlentities($_GET["id"]);
+            $articles = $this->ArticleM->findBy('id_articlenum', $id_articlenum, true, ['T_categorie' => 'id_categorie']);
+
+            $articleFirst = $articles[0];
+            $articleLast = array_reverse($articles)[0];
+
             $minis = $this->ArticleM->findBy('T_Article.id_categorie', $article["id_categorie"], true, ['T_categorie' => 'id_categorie']);
 
             $pageTitle = $article["nom_article"];
-            Renderer::render('article', compact('pageTitle', 'article', 'minis'));
+            Renderer::render('article', compact('pageTitle', 'articleFirst', 'articleLast', 'minis'));
         }
 
 

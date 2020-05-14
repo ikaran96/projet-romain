@@ -2,20 +2,27 @@
 
 require_once('Database.php');
 
-abstract class Model extends Database {
+class Model extends Database {
 
     
     protected $_table;
 
+    public function __construct()
+    {
+        parent::__construct();
+
+    }
 
     public function findAll($joins= []) 
     {
+        echo $this->_table;
         $sql = "SELECT * 
                 FROM {$this->_table}";
         if (!empty($joins)) {
-            foreach($joins as $table=>$col)
-            $sql .= " LEFT JOIN {$table} ON {$this->_table}.{$col} = {$table}.{$col} ";
+            foreach($joins as $tableJ=>$colJ)
+            $sql .= " LEFT JOIN {$tableJ} ON {$this->_table}.{$colJ} = {$tableJ}.{$colJ} ";
         }
+        $sql .= " ORDER BY id_article ";
         $req = $this->_pdo->prepare($sql);
         $req->execute();
         $items = $req->fetchAll();

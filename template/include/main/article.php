@@ -1,27 +1,27 @@
 <main>
 
-    <a class="tag-word tag-art" href="?controller=article&task=showCa&id=<?=$article['id_categorie']?>">
-        <?=$article['nom_categorie']?>
+    <a class="tag-word tag-art" href="?controller=article&task=showCa&id=<?=$articleLast['id_categorie']?>">
+        <?=$articleLast['nom_categorie']?>
     </a>
 
     <article class="article">
 
-        <h3 class="top-art-title title-art"><?=$article['nom_article']?></h3>
+        <h3 class="top-art-title title-art"><?=$articleLast['nom_article']?></h3>
 
-        <p class="date-from date-art"><?=$article['dateparution_article']?></p>
+        <p class="date-from date-art"><?=$articleFirst['dateparution_article']?></p>
 
         <div class="top-card-img img-art" href="top-article.php">
-            <img src="<?=$article['image_article']?>" alt="<?=$article['nom_article']?>">
+            <img src="<?=$articleLast['image_article']?>" alt="<?=$articleLast['nom_article']?>">
         </div>
 
-        <p class="intro">
+        <p class="intro">test</p>
             
         </p>
 
         <h4>Lorem ipsum dolor sit amet</h4>
 
         <p>
-            <?=$article['texte_article']?>
+            <?=$articleLast['texte_article']?>
         </p>
 
         <div class="similar-content">

@@ -1,7 +1,7 @@
 <?php
-require_once('models/CategorieM.php');
-$CategorieM = new CategorieM;
-$categories = $CategorieM->findAll();
+    require_once('models/CategorieM.php');
+    $CategorieM = new CategorieM;
+    $categories = $CategorieM->findAll();
 ?>
 
 <nav id="nav">
