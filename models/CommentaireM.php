@@ -33,17 +33,24 @@ class CommentaireM extends Model
         // la dernière id insérée est récupérée
         $id_numcommentaire = $this->_pdo->lastInsertId();
         
-        $contenu_commentaire = !empty($_POST['comment']) ? $_POST['comment'] : NULL;
+        // $contenu_commentaire = !empty($_POST['comment']) ? $_POST['comment'] : NULL;
         $date_commentaire = date('Y-m-d');
         $id_user = "1";
+        $contenu_commentaire = "commentaire";
+        var_dump($contenu_commentaire);
 
-        $sql = "INSERT INTO t_commentaire (`contenu_commentaire`, `date_commentaire`, `id_user`, `id_numcommentaire`)
-                VALUES (:contenu_commentaire, :date_commentaire, :id_user, :id_numcommentaire)";
+        $sql = 'INSERT INTO t_commentaire (`contenu_commentaire`, `date_commentaire`, `id_user`, `id_numcommentaire`)
+                VALUES (:contenu_commentaire, :date_commentaire, :id_user, :id_numcommentaire)';
+        // $sql = "INSERT INTO `t_commentaire` (contenu_commentaire, `date_commentaire`, `id_user`, `id_numcommentaire`) 
+        //         VALUES ($contenu_commentaire, '2020-05-13', '1', '$id_numcommentaire')";
+
         $req = $this->_pdo->prepare($sql);
+
         $req->execute(array(
             $contenu_commentaire => 'contenu_commentaire',
             $date_commentaire => 'date_commentaire', 
             $id_user =>'id_user', 
             $id_numcommentaire => 'id_numcommentaire'));
     }
+
 }
