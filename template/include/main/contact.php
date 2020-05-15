@@ -22,7 +22,7 @@
             Pour toute autre question, merci d’utiliser le formulaire ci-dessous.
         </p>
 
-        <form class="formulaire-contact" action="">
+        <form class="formulaire-contact" action="./traitement.php">
             <p class="formulaire-middle">
                 <label class="label-formulaire-contact" for="nom">Nom*</label> <br>
                 <input id="nom" class="input-formulaire-contact" type="text"> <br>

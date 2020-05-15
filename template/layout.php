@@ -22,8 +22,9 @@
     
     <!-- nav -->
     <?php include 'include/nav.php'; ?>
-    
+   
     <div id="page">
+ 
 
         <!-- main -->
         <?=$pageContent?>

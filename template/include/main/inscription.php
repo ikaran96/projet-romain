@@ -7,7 +7,7 @@
 
     <div class="container-formulaire-contact">
 
-        <form class="formulaire-contact" action="" method="POST">
+        <form class="formulaire-contact" action="index.php?controller=user&task=inscriptionUser" method="POST">
             <p class="formulaire-middle">
                 <label class="label-formulaire-contact" for="email">E-mail*</label> <br>
                 <input name="mail_user" id="email" class="input-formulaire-contact" type="text"><br>
@@ -26,7 +26,7 @@
                 <label class="label-formulaire-contact" for="avatar">Avatar*</label> <br>
                 <input id="avatar" name="avatar" class="input-formulaire-contact" type="file"><br>
             </p>
-            <button class="button-formulaire-contact" type="submit" name="button-contact">SE CONNECTER</button>
+            <button class="button-formulaire-contact" type="submit" name="button-contact">S'INSCRIRE'</button>
         </form>
 
     </div>

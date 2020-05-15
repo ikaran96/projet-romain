@@ -7,7 +7,7 @@
 
     <div class="container-formulaire-contact">
 
-        <form class="formulaire-contact" action="">
+        <form class="formulaire-contact" action="index.php?controller=user&task=connexionUser" method="POST">
             <p class="formulaire-middle">
                 <label class="label-formulaire-contact" for="pseudo">Pseudo*</label> <br>
                 <input id="pseudo" name="pseudo" class="input-formulaire-contact" type="text"> <br>
