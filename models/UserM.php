@@ -50,5 +50,17 @@ class UserM extends Model {
             }
         }
     }
+
+    public function activationToken(){
+        $token = $_GET['activation'];
+        $sql="SELECT * FROM t_user  WHERE token_user = ?";
+        $req->execute([$token]);
+        $count = $req->rowCount();
+        if ($count > 0) {
+            $sql= "UPDATE t_user SET etat_user = ? WHERE token_user = ?";
+            $req->execute([1, $token]);
+        }
+
+    }
 }
     

@@ -44,6 +44,7 @@ class UserC{
     }
 
     public function verifToken(){
+        $verifToken = $this->UserM->verifToken();
 
     }
 
@@ -53,6 +54,16 @@ class UserC{
         $connUser = $this->UserM->connexionUser($pseudo_user, $password_user);
         if  ($connUser){
             header ("location:index.php");
+        }else{
+            echo "erreur";
+        }
+
+    }
+
+    public function activationToken(){
+        $tokenactivation = $this->UserM->activationToken();
+        if ($tokenactivation){
+            header("lcation:index.php");
         }else{
             echo "erreur";
         }
