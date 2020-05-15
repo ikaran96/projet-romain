@@ -50,4 +50,14 @@ class ArticleC
             throw new Exception("L'ajout de votre commentaire a échoué");
         }
     }
+
+    public function editComment() {
+        $id_articlenum = htmlentities($_GET['id']);
+        $newComment = $this->CommentaireM->editComment($id_articlenum);
+        if ($newComment) {
+            header('location:index.php');
+        } else {
+            throw new Exception("L'édition de votre commentaire a échoué");
+        }
+    }
 }

@@ -77,7 +77,7 @@
                         <p><?= $comment['contenu_commentaire'] ?>
                         </p>
                         <!-- php if connected -->
-                        <button class="comment-btn archive" type="submit" href="">Modifier</button>
+                        <button class="comment-btn archive" type="submit" onclick="window.location.href='index.php?controller=article&task=editComment&id=1';">Modifier</button>
                         <button class="comment-btn delete" type="submit" href="">Supprimer</button>
                         <?= var_dump($comment)?>
                         <!-- /php if connected -->

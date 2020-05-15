@@ -17,6 +17,12 @@ class CommentaireM extends Model
         $req->execute();
         $items = $req->fetchAll();
         $req->closeCursor();
+
+        foreach ($items as $item)
+            var_dump($item['id_numcommentaire']);
+
+        var_dump($items);
+        exit;
         return $items;
     }
 
@@ -32,7 +38,7 @@ class CommentaireM extends Model
 
         // la dernière id insérée est récupérée
         $id_numcommentaire = $this->_pdo->lastInsertId();
-        
+
         // $contenu_commentaire = !empty($_POST['comment']) ? $_POST['comment'] : NULL;
         $date_commentaire = date('Y-m-d');
         $id_user = "1";
@@ -40,7 +46,7 @@ class CommentaireM extends Model
         var_dump($contenu_commentaire);
 
         $sql = 'INSERT INTO t_commentaire (`contenu_commentaire`, `date_commentaire`, `id_user`, `id_numcommentaire`)
-                VALUES (:contenu_commentaire, :date_commentaire, :id_user, :id_numcommentaire)';
+                VALUES (?, ?, ?, ?)';
         // $sql = "INSERT INTO `t_commentaire` (contenu_commentaire, `date_commentaire`, `id_user`, `id_numcommentaire`) 
         //         VALUES ($contenu_commentaire, '2020-05-13', '1', '$id_numcommentaire')";
 
@@ -48,9 +54,29 @@ class CommentaireM extends Model
 
         $req->execute(array(
             $contenu_commentaire => 'contenu_commentaire',
-            $date_commentaire => 'date_commentaire', 
-            $id_user =>'id_user', 
-            $id_numcommentaire => 'id_numcommentaire'));
+            $date_commentaire => 'date_commentaire',
+            $id_user => 'id_user',
+            $id_numcommentaire => 'id_numcommentaire'
+        ));
+
+        return $req;
     }
 
+    public function editComment($id_commentaire)
+    {
+        // on récupère l'id de l'utilisateur qui modifie le commentaire
+        $user_id = 1;
+
+
+        $sql = 'INSERT INTO t_commentaire (contenu_commentaire, date_commentaire, id_user, id_numcommentaire)
+                (SELECT contenu_commentaire, date_commentaire, ?, id_numcommentaire
+                FROM t_commentaire
+                WHERE id_commentaire = ?)';
+
+        $req = $this->_pdo->prepare($sql);
+
+        $req->execute(array($user_id, $id_commentaire));
+
+        return $req;
+    }
 }
