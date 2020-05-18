@@ -7,6 +7,7 @@ require_once("Renderer.php");
 class ArticleC {
 
     private $ArticleM;
+    private $ArticleNum;
 
     public function __construct()
     {
@@ -77,12 +78,6 @@ class ArticleC {
             Renderer::render('article', compact('pageTitle', 'articleFirst', 'articleLast', 'minis'));
         }
 
-        public function test()
-        {
-
-            $pageTitle = $article["nom_article"];
-            Renderer::render('home', compact('pageTitle'), true);
-        }
 
 
 }

@@ -1,6 +1,7 @@
 <?php 
 
 require_once('./controllers/ArticleC.php');
+require_once('./controllers/AdminC.php');
 require_once('./controllers/UserC.php');
 
 class Application 

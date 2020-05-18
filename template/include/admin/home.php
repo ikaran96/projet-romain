@@ -7,7 +7,7 @@
           
         <p class="admin-title-home">Utilisateurs</p><br>
         <p class="admin-description-home"> Modifier, supprimer et gérer vos utilisateurs</p><br>
-        <a href=""><button class="admin-button-home">CLIQUEZ-MOI</button></a> 
+        <a href="?controller=admin&task=user"><button class="admin-button-home">CLIQUEZ-MOI</button></a> 
     </div>
 
     <div class="admin-card-home">
@@ -17,7 +17,7 @@
           
         <p class="admin-title-home">Historique</p><br>
         <p class="admin-description-home"> Modifier, supprimer et gérer vos utilisateurs</p><br>
-        <a href=""><button class="admin-button-home">CLIQUEZ-MOI</button></a> 
+        <a href="?controller=admin&task=historique"><button class="admin-button-home">CLIQUEZ-MOI</button></a> 
     </div>
 
     <div class="admin-card-home">
@@ -27,7 +27,7 @@
           
         <p class="admin-title-home">Gestion des articles</p><br>
         <p class="admin-description-home"> Modifier, supprimer et gérer vos utilisateurs</p><br>
-       <a href=""><button class="admin-button-home">CLIQUEZ-MOI</button></a> 
+       <a href="?controller=admin&task=article"><button class="admin-button-home">CLIQUEZ-MOI</button></a> 
     </div>
 
 </div>

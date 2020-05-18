@@ -9,7 +9,12 @@ class Renderer
 
         ob_start();
 
-        require('template/include/main/' . $path . '.php');
+        if($admin) 
+        {
+            require('template/include/admin/' . $path . '.php');
+        } else {
+            require('template/include/main/' . $path . '.php');
+        }
         
         $pageContent = ob_get_clean();
         
