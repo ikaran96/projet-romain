@@ -71,15 +71,25 @@
                     </div>
                     <div>
                         <div class="comment-header">
-                            <h4>BDD Variable Nom Prenom User</h4>
+                            <h4>id_auteur = <?= $comment['id_auteur'] ?></h4>
                             <span class="time"><?= strftime('%d %b. %Y, %R', strtotime($comment['date_commentaire'])) ?></span>
+                            <?php if ($comment['id_moderateur'] != 'null') : ?>
+                                <span>si édité, édité par id_user <?= $comment['id_moderateur'] ?></span>
+                            <?php endif ?>
                         </div>
-                        <p><?= $comment['contenu_commentaire'] ?>
-                        </p>
-                        <!-- php if connected -->
-                        <button class="comment-btn archive" type="submit" onclick="window.location.href='index.php?controller=article&task=editComment&id=1';">Modifier</button>
-                        <button class="comment-btn delete" type="submit" href="">Supprimer</button>
-                        <?= var_dump($comment)?>
+                        <p><?= $comment['contenu_commentaire'] ?></p>
+                        <form id="commentEdition" action="" method="post">
+                            <div id="<?=$comment['id_commentaire']?>" class="hidden">
+                                <textarea name="commentEdited" id="commentEdited" cols="30" rows="5">
+                                <?= $comment['contenu_commentaire'] ?>
+                            </textarea>
+                            <button class="comment-btn save" data-index="<?=$comment['id_commentaire']?>">Enregistrer</button>
+                            <button class="comment-btn cancel" data-index="<?=$comment['id_commentaire']?>">Annuler modification</button>
+                            </div>
+                            <!-- php if connected -->
+                            <button class="comment-btn edit" data-index="<?=$comment['id_commentaire']?>">Modifier</button>
+                            <button class="comment-btn delete" type="submit">Supprimer</button>
+                        </form>
                         <!-- /php if connected -->
                     </div>
                 </div>
