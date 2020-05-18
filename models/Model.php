@@ -7,22 +7,31 @@ class Model extends Database {
     
     protected $_table;
 
-    public function __construct()
+    public function __construct($resetTable = NULL)
     {
         parent::__construct();
+        if ($resetTable !== NULL)
+        {
+            $this->_table = $resetTable;
+        }
 
     }
 
-    public function findAll($joins= []) 
+    public function findAll($joins= [], $option = NULL) 
     {
-        echo $this->_table;
         $sql = "SELECT * 
                 FROM {$this->_table}";
-        if (!empty($joins)) {
-            foreach($joins as $tableJ=>$colJ)
-            $sql .= " LEFT JOIN {$tableJ} ON {$this->_table}.{$colJ} = {$tableJ}.{$colJ} ";
+        if (!empty($joins)) 
+        {
+            foreach($joins as $tableJ=>$colJ) 
+            {
+                $sql .= " LEFT JOIN {$tableJ} ON {$this->_table}.{$colJ} = {$tableJ}.{$colJ} ";
+            }
         }
-        $sql .= " ORDER BY id_article ";
+        if ($option != NULL) 
+        {
+            $sql .= " $option ";
+        }
         $req = $this->_pdo->prepare($sql);
         $req->execute();
         $items = $req->fetchAll();

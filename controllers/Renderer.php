@@ -3,7 +3,7 @@
 class Renderer 
 {
 
-    public static function render(string $path, array $variables = [])
+    public static function render(string $path, array $variables = [], $admin = false)
     {
         extract($variables);
 
@@ -13,7 +13,12 @@ class Renderer
         
         $pageContent = ob_get_clean();
         
-        require('template/layout.php');
+        if($admin) 
+        {
+            require('template/admin.php');
+        } else {
+            require('template/layout.php');
+        }
     }
 
 }

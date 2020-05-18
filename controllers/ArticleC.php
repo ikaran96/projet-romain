@@ -1,5 +1,6 @@
 <?php
 
+require_once('./models/Model.php');
 require_once('./models/ArticleM.php');
 require_once("Renderer.php");
 
@@ -10,14 +11,26 @@ class ArticleC {
     public function __construct()
     {
         $this->ArticleM = new ArticleM;
+        $this->ArticleNum = new Model('T_articlenum');
     }
 
 
         public function showAll()
         {
-            $articles = $this->ArticleM->findAll(['T_categorie' => 'id_categorie']);
+            // Récupération des numéros des articles
+            $nbarticles = $this->ArticleNum->findAll('','ORDER BY id_articlenum DESC LIMIT 10');
 
-            $articles = array_reverse($articles);
+            // Récupération des premières et dernières versions des articles
+            $i = 0; $articles = [];
+            foreach ($nbarticles as $nbarticle)
+            {
+                $articleV = $this->ArticleM->findBy('id_articlenum', $nbarticle[0], true, ['T_categorie' => 'id_categorie']);
+                $articleFirst = $articleV[0];
+                $articleLast = array_reverse($articleV)[0];
+
+                $articles[$i] = compact('articleFirst','articleLast');
+                $i++;
+            }
 
             $pageTitle = 'Accueil';
             Renderer::render('home', compact('pageTitle', 'articles'));
@@ -25,10 +38,28 @@ class ArticleC {
 
         public function showCa()
         {
+            // Récupération de l'id de la catégorie
             $id_categorie = htmlentities($_GET["id"]);
-            $articles = $this->ArticleM->findBy('T_Article.id_categorie', $id_categorie, true, ['T_categorie' => 'id_categorie']);
 
-            $pageTitle = $articles[0]["nom_categorie"];
+            // Récupération des numéros des articles
+            $nbarticles = $this->ArticleNum->findAll('','ORDER BY id_articlenum DESC');
+
+            // Récupération des premières et dernières versions des articles
+            $i = 0; $articles = [];
+            foreach ($nbarticles as $nbarticle)
+            {   
+                $articleV = $this->ArticleM->findBy('id_articlenum', $nbarticle[0], true, ['T_categorie' => 'id_categorie']);
+                
+                if( $articleV[0]['id_categorie'] == $id_categorie )
+                {
+                    $articleFirst = $articleV[0];
+                    $articleLast = array_reverse($articleV)[0];
+                    $articles[$i] = compact('articleFirst','articleLast');
+                    $i++;
+                }
+            }
+
+            $pageTitle = $articles[0]['articleLast']["nom_categorie"];
             Renderer::render('top', compact('pageTitle', 'articles'));
         }
 
@@ -46,6 +77,12 @@ class ArticleC {
             Renderer::render('article', compact('pageTitle', 'articleFirst', 'articleLast', 'minis'));
         }
 
+        public function test()
+        {
+
+            $pageTitle = $article["nom_article"];
+            Renderer::render('home', compact('pageTitle'), true);
+        }
 
 
 }
