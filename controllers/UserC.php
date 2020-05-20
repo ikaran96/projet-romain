@@ -51,19 +51,13 @@ class UserC{
     public function connexionUser(){
         $pseudo_user = !empty($_POST['pseudo']) ? $_POST['pseudo'] : NULL;
         $password_user = !empty($_POST['pass']) ? $_POST['pass'] : NULL;
-        $connUser = $this->UserM->connexionUser($pseudo_user, $password_user);
-        if  ($connUser){
-            header ("location:index.php");
-        }else{
-            echo "erreur";
-        }
-
+        $connUser = $this->UserM->connexionUser();
     }
 
     public function activationToken(){
         $tokenactivation = $this->UserM->activationToken();
         if ($tokenactivation){
-            header("lcation:index.php");
+            header("location:index.php");
         }else{
             echo "erreur";
         }

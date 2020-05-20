@@ -14,7 +14,7 @@
             </p>
             <p class="formulaire-middle">
                 <label class="label-formulaire-contact" for="pass">Mot de passe*</label> <br>
-                <input id="pass" nom="pass" class="input-formulaire-contact" type="password"><br>
+                <input id="pass" name="pass" class="input-formulaire-contact" type="password"><br>
             </p>
             <button class="button-formulaire-contact" type="submit" name="button-contact">SE CONNECTER</button>
         </form>

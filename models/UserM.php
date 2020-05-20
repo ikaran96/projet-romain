@@ -18,6 +18,8 @@ class UserM extends Model {
                 $sql="INSERT INTO t_user SET pseudo_user = ?, password_user = ?,mail_user = ?, avatar_user = ?, token_user= ?, etat_user=0, id_typeuser=3";
                 $req = $this->_pdo->prepare($sql);
                 $req->execute([$pseudo_user,$password_user,$mail_user,$avatar_user,$token_user]); 
+            }else{
+                echo "Pseudo ou Mail déjà pris";
             }
         }
     } 
@@ -34,22 +36,39 @@ class UserM extends Model {
         return $bool;
     }
 
-    public function connexionUser($pseudo_user, $password_user){
+    public function connexionUser(){
+        $pseudo_user = !empty($_POST['pseudo']) ? $_POST['pseudo'] : NULL;
+        $password_user = !empty($_POST['pass']) ? $_POST['pass'] : NULL;
         $sql="SELECT * FROM t_user WHERE pseudo_user = ? AND password_user = ? AND id_typeuser=3";
         $req = $this->_pdo->prepare($sql);
         $req->execute([$pseudo_user, $password_user]);
-        $donnees = $req->fetch();
         $count = $req->rowCount();
-
         if ($count > 0) {
-            $bool = $this->verifToken();
-            if ($bool == true) {
+            $donnees = $req->fetch();
+            $mdp = $donnees['password_user'];
+            $mdpvalide = password_verify($password_user, $mdp);
+            if($mdpvalide ==1){
+                $lastlog = date("Y-m-d H:i:s");
+                $sql="UPDATE t_user SET lastlog_user = :lastlog_user WHERE id_user = :id_user";
+                $req = $this->_pdo->prepare($sql);
+                $req->execute(array(
+                    'lastlog_user' => $lastlog,
+                    'id_user' => $donnees['id_user']
+                ));
                 session_start();
-                $etat_user = 1;
-                $_SESSION['Pseudo'] = $pseudo_user;
+                $_SESSION['id_user'] = $donnees['id_user'];
+                $_SESSION['pseudo_user'] = $donnees['pseudo_user'];
+                $_SESSION['id_typeuser'] = $donnees['id_typeuser'];
+                header('location:index.php');
+            }else{
+                header('location:?controller=user&task=showConnexion?error');
             }
+
+
         }
+            
     }
+
 
     public function activationToken(){
         $token = $_GET['activation'];
