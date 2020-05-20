@@ -36,11 +36,6 @@ class UserC{
         $mail_user = !empty($_POST['mail_user']) ? $_POST['mail_user'] : NULL;
         $avatar_user = !empty($_POST['avatar']) ? $_POST['avatar'] : NULL;      
         $newUser = $this->UserM->inscriptionUser($pseudo_user, $password_user, $mail_user,$avatar_user);
-        if  ($newUser){
-            header ("location:index.php");
-        }else{
-            echo "erreur";
-        }
     }
 
     public function verifToken(){

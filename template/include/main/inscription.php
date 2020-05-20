@@ -8,6 +8,8 @@
     <div class="container-formulaire-contact">
 
         <form class="formulaire-contact" action="index.php?controller=user&task=inscriptionUser" method="POST">
+      
+         
             <p class="formulaire-middle">
                 <label class="label-formulaire-contact" for="email">E-mail*</label> <br>
                 <input name="mail_user" id="email" class="input-formulaire-contact" type="text"><br>
